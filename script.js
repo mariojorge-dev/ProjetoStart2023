@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     });
 const formulario = document.querySelector("form");
-console.log(formulario);
 const Inome = document.querySelector(".nome");
 const Icpf = document.querySelector(".cpf");
 const Icontato = document.querySelector(".contato");
