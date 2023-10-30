@@ -16,7 +16,7 @@ function cadastrar() {
     fetch("http://localhost:8080/usuarios", {
         headers: {
             'Accept': 'application/json',
-            'Content-Type': 'application/json' // Correção aqui
+            'Content-Type': 'application/json' 
         },
         method: "POST",
         body: JSON.stringify({
