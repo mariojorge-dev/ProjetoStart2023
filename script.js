@@ -5,11 +5,11 @@ const Inome = document.querySelector(".nome");
 const Icpf = document.querySelector(".cpf");
 const Icontato = document.querySelector(".contato");
 const Idatanasc = document.querySelector(".datanasc");
-const Isexo = document.querySelector(".sexo");/*
+const Isexo = document.querySelector(".sexo");
 const Icep = document.querySelector(".cep");
 const Icidade = document.querySelector(".cidade");
 const Iestado = document.querySelector(".estado");
-const Iendereco = document.querySelector(".endereco");*/
+const Iendereco = document.querySelector(".endereco");
 const Isenha = document.querySelector(".senha");
 
 function cadastrar() {
@@ -37,11 +37,11 @@ function limpar () {
     Icpf.value = "";
     Icontato.value = "";
     Idatanasc.value = "";
-    Isexo.value = "";/*
+    Isexo.value = "";
     Icep.value = "";
     Icidade.value = "";
     Iestado.value = "";
-    Iendereco.value = "";*/
+    Iendereco.value = "";
     Isenha.value = "";
     
 };
