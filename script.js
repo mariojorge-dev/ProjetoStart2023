@@ -25,7 +25,12 @@ function cadastrar() {
             contato: Icontato.value,
             idade: Idatanasc.value,
             sexo: Isexo.value,
+            cep: Icep.value,
+            cidade: Icidade.value,
+            estado: Iestado.value,
+            endereco: Iendereco.value,
             senha: Isenha.value
+
         })
     })
     .then(function (res) { console.log(res) })
@@ -43,7 +48,6 @@ function limpar () {
     Iestado.value = "";
     Iendereco.value = "";
     Isenha.value = "";
-    
 };
 
 formulario.addEventListener('submit', function (event) {

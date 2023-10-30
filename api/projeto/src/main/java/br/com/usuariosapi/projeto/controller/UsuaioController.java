@@ -1,0 +1,52 @@
+//Define o pacote onde a classe UsuaioController está localizada.
+package br.com.usuariosapi.projeto.controller;
+
+//Importam as classes e interfaces necessárias para o funcionamento do controlador. Usuario e a interface IUsuario.
+//As classes do Spring Framework
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.usuariosapi.projeto.DAO.IUsuario;
+import br.com.usuariosapi.projeto.model.Usuario;
+
+@RestController //UsuaioController como um controlador Spring, lidar com solicitações HTTP e retornar respostas HTTP.
+@CrossOrigin("*") // solicitações de origens cruzadas, o que significa que a API pode ser acessada por clientes de diferentes domínios.
+@RequestMapping("/usuarios") // Define o mapeamento de URL base para todas as solicitações tratadas por este controlador.
+public class UsuaioController {
+	
+	@Autowired // injeta uma instância de IUsuario no controlador. Isso permite ao controlador interagir com o repositório de dados (IUsuario) para executar operações CRUD em entidades de usuário.
+	private IUsuario dao;
+	
+	@GetMapping //mapeia o método ListaUsuarios() para lidar com solicitações HTTP GET na URL base definida em @RequestMapping("/usuarios"). retorna uma lista de todos os usuários no repositório de dados.
+	public List<Usuario> ListaUsuarios() {
+		return (List<Usuario>) dao.findAll();
+		}
+	
+	@PostMapping //mapeia o método criarUsiario() para manipular solicitações HTTP POST na mesma URL base. O método recebe um objeto JSON de usuário no corpo da solicitação, cria um novo usuário no repositório de dados e retorna o novo usuário criado.
+	public Usuario  criarUsiario (@RequestBody Usuario usuario) {
+		Usuario usuarioNovo = dao.save(usuario);
+		return usuarioNovo;
+	}
+	@PutMapping // mapeia o método editarUsuario() para lidar com solicitações HTTP PUT. Assim como o método @PostMapping, ele recebe um objeto JSON de usuário no corpo da solicitação, atualiza o usuário existente no repositório de dados e retorna o usuário atualizado.
+	public Usuario editarUsuario (@RequestBody Usuario usuario) {
+		Usuario usuarioNovo = dao.save(usuario);
+		return usuarioNovo;
+	}
+	@DeleteMapping("/{idusuario}") //mapeia o método excluirUsuario() para tratar solicitações HTTP DELETE na URL base com um ID de usuário fornecido como parte da URL. O método exclui o usuário com o ID especificado no repositório de dados e retorna o usuário excluído encapsulado em um objeto Optional.
+	public Optional<Usuario> excluirUsuario (@PathVariable Integer idusuario){
+    Optional<Usuario> usuario = dao.findById(idusuario);
+	dao.deleteById(idusuario);
+	return usuario;
+	}
+}
