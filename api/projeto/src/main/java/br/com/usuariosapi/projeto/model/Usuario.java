@@ -1,18 +1,22 @@
 package br.com.usuariosapi.projeto.model;
 
+import java.io.Serializable;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "usuarios")
-public class Usuario {
+public class Usuario implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+
 /*
 	private static final CascadeType[] CascadeTypeALL = null;*/
 
@@ -31,7 +35,7 @@ public class Usuario {
 	private String contato;
 
 	@Column(name = "datanascimento", length = 10, nullable = true)
-	private String datanasc;
+	private String datanascimento;
 
 	@Column(name = "sexo", length = 9, nullable = true)
 	private String sexo;
@@ -39,8 +43,8 @@ public class Usuario {
 	@Column(name = "senha", columnDefinition = "TEXT", nullable = true)
 	private String senha;
 	
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "idusuario", referencedColumnName = "idusuario")
+
+	@OneToOne(mappedBy = "usuario", cascade = CascadeType.ALL)
 	private Endereco endereco;
 
 	
@@ -80,12 +84,12 @@ public class Usuario {
 		this.contato = contato;
 	}
 
-	public String getDatanasc() {
-		return datanasc;
+	public String getDatanascimento() {
+		return datanascimento;
 	}
 
-	public void setDatanasc(String datanasc) {
-		this.datanasc = datanasc;
+	public void setDatanascimento(String datan) {
+		this.datanascimento = datan;
 	}
 
 	public String getSexo() {
