@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 import br.com.usuariosapi.projeto.DAO.IEndereco;
 import br.com.usuariosapi.projeto.model.Endereco;
-import jakarta.transaction.Transactional;
+
 
 import java.util.List;
 import java.util.Optional;
