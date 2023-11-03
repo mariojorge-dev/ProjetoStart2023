@@ -4,33 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_tela_login.css">
+    <link rel="stylesheet" href="style/fonts.css">
     <title>Login</title>
+    <link rel="icon"  href="Img/favicon.ico">
 </head>
 <body>
     
-    <div class="main-login">
+    <header>
+    <h1>Educa Pro Tech</h1>
+
+        <ul>
+            <a href="index.html">
+                <li>Inicio </li>
+            </a>
+            <a href="tela_login.html">
+                <li>Login </li>
+            </a>
+            <a href="#">
+                <li>Cursos</li>
+            </a>
+            <a href="#">
+                <li>Sobre</li>
+            </a>
+            <a href="cadastrogeral.html" id="inscreva-se-btn">
+                <li>Cadastre-se</li>
+            </a>
+
+        </ul>
+    </header>
+
         
-        <div class="esquerda-login">
-            <h1>Entre para nossa familia</h1>
-            <img src="Img/security-animate.svg" class="esquerda-login-imagem" alt="logo">
-            <p>
-                <a href="index.html"><button class="btn-voltar-pagi">Voltar</button></a>
-            </p>
-        </div>
-        <div class="direita-login">
-            <div class="card-login">
-               <h1>LOGIN</h1>
-                <div class="campo-texto">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" placeholder="Usuário">
+
+        <div class="main-login">
+        
+        
+
+            <div class="esquerda-login">
+                <h1>Entre para nossa familia</h1>
+                <img src="Img/security-animate.svg" class="esquerda-login-imagem" alt="logo">
+                <p>
+                    <a href="index.html"><button class="btn-voltar-pagi">Voltar</button></a>
+                </p>
+            </div>
+            <div class="direita-login">
+                <div class="card-login">
+                   <h1>LOGIN</h1>
+                    <div class="campo-texto">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" name="usuario" placeholder="Usuário">
+                    </div>
+                    <div class="campo-texto">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" placeholder="Senha">
+                    </div>
+                    <button class="btn-login">Login</button>
                 </div>
-                <div class="campo-texto">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Senha">
-                </div>
-                <button class="btn-login">Login</button>
             </div>
         </div>
-    </div>
+        
+
+    
 </body>
 </html>

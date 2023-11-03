@@ -1,11 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Satisfy&display=swap');
-
-
-body{
+* {
+    padding: 0;
     margin: 0;
-    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
 }
 
+body {
+    
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+ 
+ 
+ }
+ 
+ header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+ }
+ 
+ #title{
+    flex-direction: column;
+    line-height: 10px;
+ }
+ 
+ li {
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+ 
+ }
+ 
+ a {
+    color: white
+ }
+ 
+ a:hover{
+    color: #301efe;
+    transition: 0.3s all;
+ }
+ 
+ #inscreva-se-btn {
+    border: 2px solid #301efe;
+    padding: 5px;
+    border-radius: 20px;
+ }
+ 
+ #inscreva-se-btn:hover {
+    background-color: #301efe;
+    color: white;
+ }
 body *{
     box-sizing: border-box;
 }
@@ -141,13 +190,13 @@ body *{
 
 /*media ajuda na responsividade da página*/
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 760px){
     .card-login{
         width: 85%;
     }
 }
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 760px){
     .main-login{
         flex-direction: flex;
     }
