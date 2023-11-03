@@ -37,7 +37,8 @@ li {
 }
 
 a {
-   color: rgb(233, 227, 227)
+   text-decoration: none;
+    color: rgb(233, 227, 227)
 }
 
 a:hover {
