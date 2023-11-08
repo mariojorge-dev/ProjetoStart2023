@@ -1,4 +1,4 @@
-package br.com.usuariosapi.projeto.DAO;
+package br.com.usuariosapi.projeto.repositories;
 
 import org.springframework.stereotype.Repository;
 

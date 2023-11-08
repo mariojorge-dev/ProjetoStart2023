@@ -3,9 +3,12 @@ package br.com.usuariosapi.projeto.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import br.com.usuariosapi.projeto.DAO.IEndereco;
 import br.com.usuariosapi.projeto.model.Endereco;
+<<<<<<< HEAD
 
+=======
+import br.com.usuariosapi.projeto.repositories.IEndereco;
+>>>>>>> bb9c2aad871e742757f5bd7bc5d6949230c0e449
 
 import java.util.List;
 import java.util.Optional;
