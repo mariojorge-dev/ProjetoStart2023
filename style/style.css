@@ -1,9 +1,8 @@
 body {
    background-color: #27374D;
    font-family: poppinsregular;
-   /* max-width: 1200px; */
    margin: 0;
-   padding: 0px;
+   padding: 10px;
    height: 100vh;
 }
 
@@ -23,7 +22,7 @@ li {
 }
 
 a {
-   color: #FFF;
+   color: #DDE6ED;
    text-decoration: none;
 }
 

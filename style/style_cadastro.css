@@ -2,9 +2,8 @@ body {
     background-color: #27374D;
     color: aliceblue;
     font-family: poppinsregular;
-    /* max-width: 1200px; */
     margin: 0;
-    padding: 0px;
+    padding: 10px;
     height: 100vh;
 }
 
