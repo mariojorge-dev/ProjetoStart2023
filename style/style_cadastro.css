@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(34, 34, 34);
+    background-color: #27374D;
     color: aliceblue;
     font-family: poppinsregular;
     /* max-width: 1200px; */
@@ -14,7 +14,7 @@ header {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    border-bottom: 2px solid #301efe;
+    border-bottom: 2px solid #526D82;
 }
 
 #title {
@@ -33,19 +33,19 @@ a {
 }
 
 a:hover {
-    color: #301efe;
+    color: #526D82;
     transition: 0.3s all;
 }
 
 #inscreva-se-btn {
-    border: 2px solid #301efe;
+    border: 2px solid #526D82;
     padding: 5px;
     border-radius: 20px;
 }
 
 #inscreva-se-btn:hover {
-    background-color: #301efe;
-    color: #FFF;
+    background-color: #526D82;
+    color: #DDE6ED;
 }
 
 
@@ -59,7 +59,7 @@ h1 {
    max-width: 1200px;
    height: 80vh;
    display: flex;
-   box-shadow: 5px 5px 10px rgba(8, 0, 0, 0.212);
+   
 }
 
 .form-image {
@@ -67,22 +67,25 @@ h1 {
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: #3073f0d7;
+   background-color: #9DB2BF;
    padding: 4rem;
+   margin-left: 10%;
+   margin-top: 1%;
 }
 
 .form-image img {
-   width: 34rem;
+   width: 30rem;
 }
 
 .form {
-   max-width: 1200px;
+   max-width: 950%;
    display: flex;
    flex-direction: column;
    justify-content: left;
    align-items: left;
    background-color: white;
    padding: 1rem;
+   margin-top: 1%;
 }
 
 .form-header {
@@ -114,13 +117,13 @@ h1 {
 
 
 .input-box input {
-   margin: 1rem ;
+   margin: 5px ;
    padding: 0.2rem 1rem;
    border: none;
    border-radius: 10px;
    box-shadow: 2px 2px 6px #0000001c;
    font-size: 0.9rem ;
-
+    margin-top: 10%;
 }
 
    .input-box input:hover {
@@ -128,18 +131,18 @@ h1 {
    }
 
    .input-box input:focus-visible {
-       outline: 1px solid #6c63ff;
+       outline: 1px solid #526D82;
    }
 
    .input-box label,
    .gender-title h6 {
        font-size: 0.8rem;
        font-weight: 600;
-       color: #000000c0;
+       color: #0a0a0ac0;
    }
 
    .input-box input::placeholder {
-       color: #000000be;
+       color: #080808be;
     
    }
 

@@ -11,7 +11,7 @@
 .sessao-header h1 {
     font-size: 30px;
     color: #FFF;
-    border-bottom: solid 3px #301efe;
+    border-bottom: solid 3px #DDE6ED    ;
     margin-bottom: 50px;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .sessao-conhecimentos {
-    background-color: rgb(34, 34, 34);
+    background-color: #27374D;
 }
 
 
