@@ -2,7 +2,7 @@ body {
     background-color: #27374D;
     font-family: poppinsregular;
     margin: 0;
-    padding: 10px;
+    padding: 0px;
     height: 100vh;
 }
 
@@ -26,12 +26,12 @@ li {
 }
 
 a {
-    color: #FFF;
+    color: #DDE6ED;
     text-decoration: none;
 }
 
 a:hover {
-    color: #526D82;
+    color: #fff;
     transition: 0.3s all;
 }
 

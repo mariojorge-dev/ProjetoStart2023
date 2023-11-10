@@ -3,7 +3,7 @@ body {
     color: aliceblue;
     font-family: poppinsregular;
     margin: 0;
-    padding: 10px;
+    padding: 0px;
     height: 100vh;
 }
 
@@ -27,24 +27,24 @@ li {
 }
 
 a {
-    color: #FFF;
+    color: #DDE6ED;
     text-decoration: none;
 }
 
 a:hover {
-    color: #526D82;
+    color: #fff;
     transition: 0.3s all;
 }
 
 #inscreva-se-btn {
-    border: 2px solid #526D82;
+    border: 2px solid #DDE6ED;
     padding: 5px;
     border-radius: 20px;
 }
 
 #inscreva-se-btn:hover {
     background-color: #526D82;
-    color: #DDE6ED;
+    color: #fff;
 }
 
 
@@ -66,7 +66,7 @@ h1 {
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: #9DB2BF;
+   background-color: #DDE6ED;
    padding: 4rem;
    margin-left: 10%;
    margin-top: 1%;
@@ -172,14 +172,14 @@ h1 {
        width: 100%;
        margin-top: 1rem;
        border: none;
-       background-color: #000000;
+       background-color: #27374D;
        padding: 0.62rem;
        border-radius: 5px;
        cursor: pointer;
    }
 
    .continue-button button:hover {
-       background-color: #1d14d4f1;
+       background-color: #000000;
    }
 
    .continue-button button a {
