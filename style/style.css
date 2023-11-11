@@ -4,6 +4,9 @@ body {
    margin: 0;
    padding: 0px;
    height: 100vh;
+   
+   
+
 }
 
 header {
@@ -13,7 +16,9 @@ header {
    align-items: center;
    width: 100%;
    border-bottom: 2px solid #526D82;
+   
 }
+
 
 
 li {
@@ -49,3 +54,141 @@ div{
 }
 
 
+h1 {
+   font-weight: 200;
+
+
+}
+
+main {
+   display: flex;
+   flex-direction: row;
+   margin-top: 50px;
+   margin-left: 50px;
+   
+}
+
+h2 {
+   font-size: 36px;
+   line-height: 10px;
+   font-family: poppinsmedium;
+   color: #fff;
+}
+
+span {
+   color: #fff
+   ;
+}
+
+p {
+   line-height: 20px;
+   max-width: 500px;
+   font-family: poppinslight;
+   color: #fff;
+
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   width: 70%;
+}
+
+form [type="submit"] {
+   height: 50px;
+   width: 30%;
+   background-color: #526D82;
+   color: #DDE6ED;
+   font-size: bold;
+   
+}
+
+form [type="submit"]:hover {
+   cursor: pointer;
+   transition: 0.3s all;
+   color: #fff;
+}
+   
+
+input {
+   margin-top: 20px;
+   height: 20px;
+   padding: 15px;
+   border-radius: 20px;
+   border: none;
+   font-size: 15px;
+}
+
+/* Estilos para telas de 768px ou mais */
+@media screen and (min-width: 768px) {
+   main {
+      flex-direction: row;
+   }
+
+   form {
+      width: 50%;
+   }
+
+   .container {
+      display: flex;
+      flex-direction: row;
+      margin-left: 200px;
+      margin-top: 50px;
+   }
+
+   .pitch {
+      margin-left: 20px;
+   }
+}
+
+/* Estilos para telas de 1024px ou mais */
+@media screen and (min-width: 1024px) {
+   header {
+      flex-direction: row;
+      justify-content: space-around;
+   }
+
+   .redesSocias {
+      text-align: center;
+   }
+
+   .redesSocias ul {
+      list-style: none;
+      padding: 0%;
+      margin-top: 30px;
+   }
+
+   .redesSocias li {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 20px;
+   }
+
+   .redesSocias li:last-child {
+      margin-right: 0;
+   }
+
+   .redesSocias a {
+      text-decoration: none;
+      color: #DDE6ED;
+      margin-left: 0;
+      text-decoration: none;
+   }
+
+   .redesSocias a:hover {
+      text-decoration: none;
+      color: #fff;
+      transition: 0.3s all;
+      cursor: pointer;
+   }
+
+   .container {
+      display: flex;
+      margin-right: 25px;
+      margin-top: 50px;
+   }
+
+   .pitch {
+      margin-left: auto;
+   }
+}

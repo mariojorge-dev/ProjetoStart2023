@@ -1,0 +1,30 @@
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Ajuste o último valor (0.5) para controlar a opacidade do overlay */
+    z-index: -1; /* Coloca o overlay atrás do conteúdo da página */
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../imagens/indexFundo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -2; /* Coloca a imagem de fundo atrás do overlay */
+}
+
+@media only screen and (max-width: 767px) {
+    html {
+        background-image: url("../imagens/indexFundo.jpg");
+    }
+}
