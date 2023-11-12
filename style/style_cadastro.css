@@ -36,16 +36,57 @@ a:hover {
     transition: 0.3s all;
 }
 
-#inscreva-se-btn {
+/* Estilo do botão */
+.dropdown-btn {
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
     border: 2px solid #DDE6ED;
     padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 20px;
-}
-
-#inscreva-se-btn:hover {
-    background-color: #526D82;
+    color: #DDE6ED;
+    
+ }
+ 
+ /* Estilo do conteúdo do menu (inicialmente oculto) */
+ .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color: #FFF;
+    left: 76%;
+    transform: translateX(0%);
+    margin-top: 6px;
+ 
+ 
+ }
+ 
+ /* Estilo dos itens do menu */
+ .dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
     color: #fff;
-}
+    transition: 0.5s all;
+    border-radius: 15px;
+ }
+ 
+ /* Mudar a cor do item do menu ao passar o mouse sobre ele */
+ .dropdown-content a:hover {
+    background-color: #526D82;
+ }
+ 
+ /* Mostrar o menu quando o botão é clicado */
+ .dropdown-btn:hover .dropdown-content {
+    display: block;
+ }
 
 
 h1 {
@@ -176,14 +217,14 @@ h1 {
     width: 100%;
     margin-top: 1rem;
     border: none;
-    background-color: #27374D;
+    background-color: #9DB2BF;
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .continue-button button:hover {
-    background-color: #000000;
+    background-color: #27374D;
 }
 
 .continue-button button a {

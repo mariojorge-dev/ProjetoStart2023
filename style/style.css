@@ -4,8 +4,8 @@ body {
    margin: 0;
    padding: 0px;
    height: 100vh;
-   
-   
+
+
 
 }
 
@@ -16,7 +16,7 @@ header {
    align-items: center;
    width: 100%;
    border-bottom: 2px solid #526D82;
-   
+
 }
 
 
@@ -36,21 +36,65 @@ a:hover {
    transition: 0.3s all;
 }
 
-#inscreva-se-btn {
+
+/* Estilo do botão */
+.dropdown-btn {
+   display: inline-block;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
    border: 2px solid #DDE6ED;
    padding: 5px;
+   padding-left: 20px;
+   padding-right: 20px;
    border-radius: 20px;
-}
-
-#inscreva-se-btn:hover {
-   background-color: #526D82;
-   color: #FFF;
-}
-
-
-div{
-   color: #FFF;
+   color: #DDE6ED;
    
+}
+
+/* Estilo do conteúdo do menu (inicialmente oculto) */
+.dropdown-content {
+   display: none;
+   position: absolute;
+   min-width: 100px;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   background-color: rgba(0, 0, 0, 0.5);
+   border-radius: 15px;
+   color: #FFF;
+   left: 76%;
+   transform: translateX(0%);
+   margin-top: 6px;
+
+
+}
+
+/* Estilo dos itens do menu */
+.dropdown-content a {
+   padding: 12px 16px;
+   display: block;
+   text-decoration: none;
+   color: #fff;
+   transition: 0.5s all;
+   border-radius: 15px;
+}
+
+/* Mudar a cor do item do menu ao passar o mouse sobre ele */
+.dropdown-content a:hover {
+   background-color: #526D82;
+}
+
+/* Mostrar o menu quando o botão é clicado */
+.dropdown-btn:hover .dropdown-content {
+   display: block;
+}
+
+
+
+
+div {
+   color: #FFF;
+
 }
 
 
@@ -65,7 +109,7 @@ main {
    flex-direction: row;
    margin-top: 50px;
    margin-left: 50px;
-   
+
 }
 
 h2 {
@@ -76,8 +120,7 @@ h2 {
 }
 
 span {
-   color: #fff
-   ;
+   color: #fff;
 }
 
 p {
@@ -100,7 +143,7 @@ form [type="submit"] {
    background-color: #526D82;
    color: #DDE6ED;
    font-size: bold;
-   
+
 }
 
 form [type="submit"]:hover {
@@ -108,7 +151,7 @@ form [type="submit"]:hover {
    transition: 0.3s all;
    color: #fff;
 }
-   
+
 
 input {
    margin-top: 20px;
@@ -118,6 +161,10 @@ input {
    border: none;
    font-size: 15px;
 }
+
+
+
+
 
 /* Estilos para telas de 768px ou mais */
 @media screen and (min-width: 768px) {
