@@ -64,8 +64,28 @@ limpar();
 });
 
 
+  document.addEventListener('DOMContentLoaded', function () {
+    // Função para formatar a data
+    function formatarData(datan) {
+      // Verifica se a data está no formato esperado
+      var regexData = /^\d{2}\/\d{2}\/\d{4}$/;
+      if (!regexData.test(datan)) {
+        alert('Formato de data inválido');
+        return null;
+      }
 
-document.addEventListener('DOMContentLoaded', function () {
+      // Divide a data em dia, mês e ano
+      var partes = datan.split('/');
+      var dia = partes[0];
+      var mes = partes[1];
+      var ano = partes[2];
+
+      // Formata a data para o formato desejado (yyyy-mm-dd)
+      var dataFormatada = ano + '-' + mes + '-' + dia;
+
+      return dataFormatada;
+    }
+
     // Função para buscar informações do CEP
     function buscarCep() {
       var cep = document.querySelector('.cep').value.replace(/\D/g, ''); // Remove caracteres não numéricos
@@ -102,6 +122,15 @@ document.addEventListener('DOMContentLoaded', function () {
       buscarCep();
     });
 
+    // Adiciona evento de blur para formatar a data ao sair do campo de data
+    document.querySelector('.nascimento').addEventListener('blur', function () {
+      var dataFormatada = formatarData(this.value);
+      if (dataFormatada) {
+        this.value = dataFormatada;
+      }
+    });
+
     // ... Outros scripts ou funções que você possa ter ...
 
   });
+
