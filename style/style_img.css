@@ -16,15 +16,15 @@ body::after {
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: -2; /* Coloca a imagem de fundo atrás do overlay */
     background-image: url("../imagens/indexFundo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    z-index: -2; /* Coloca a imagem de fundo atrás do overlay */
 }
 
 @media only screen and (max-width: 767px) {
-    html {
-        background-image: url("../imagens/indexFundo.jpg");
+     html { 
+        background-color: #27374D;
     }
 }

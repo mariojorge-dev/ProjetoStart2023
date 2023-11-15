@@ -4,10 +4,7 @@ body {
    margin: 0;
    padding: 0px;
    height: 100vh;
-
-
-
-}
+ }
 
 header {
    display: flex;
@@ -15,13 +12,27 @@ header {
    justify-content: space-around;
    align-items: center;
    width: 100%;
+   padding-top: 50px;
+}
+header ul {
+   display: flex;
+   width: 600px;
+   justify-content: space-between;
+   
+
 }
 
-
+ul {
+   margin: 0;
+   padding: 0;
+}
 
 li {
-   display: inline-block;
-   margin: 20px;
+   display: flex;
+   margin: auto;
+   width: 50%;
+   justify-content: space-around;
+ 
 }
 
 a {
@@ -103,17 +114,8 @@ h1 {
 
 }
 
-main {
-   display: flex;
-   flex-direction: row;
-   margin-top: 50px;
-   margin-left: 50px;
-
-}
-
 h2 {
    font-size: 36px;
-   line-height: 10px;
    font-family: poppinsmedium;
    color: #fff;
 }
@@ -153,55 +155,96 @@ form [type="submit"]:hover {
 
 
 input {
-   margin-top: 20px;
    height: 20px;
    padding: 15px;
    border-radius: 20px;
    border: none;
    font-size: 15px;
+   margin-top: 20px;
+   min-width: 200px;
+   
 }
 
+aside {
+   min-width: 300px;
+   min-height: 500px;
+   align-items: center;
+   justify-content: space-between;
 
+}
 
+main {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   height: 75%;
+   margin: 0 20px;
 
+}
+ion-icon {
+   font-size: 1.5rem;
+   margin-top: 50px;
+}
 
-/* Estilos para telas de 768px ou mais */
-@media screen and (min-width: 768px) {
+/* Estilos para telas de 900px ou mais */
+@media screen and (max-width: 900px) {
    main {
-      flex-direction: row;
+      flex-direction: column;
+      height: 100%;
+      
+   
    }
-
-   form {
-      width: 50%;
+   header {
+      margin-top: 0;
    }
-
-   .container {
+   header ul {
+      flex-direction: column;
+      width: 200px;
+   }
+   
+   h2 {
+      font-size: 1.5rem !important;
+      padding-top: 80px;
+   }
+   aside {
+      text-align: center;
+      align-items: center;
       display: flex;
-      flex-direction: row;
-      margin-left: 200px;
-      margin-top: 50px;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 50px;
+   }
+   form {
+      display: flex;
+      align-items: center;
+   }
+   input {
+      width: 70%;
+   }
+   .pitch iframe {
+      width: 350px;
+      height: 196px;
    }
 
-   .pitch {
-      margin-left: 20px;
-   }
 }
 
 /* Estilos para telas de 1024px ou mais */
-@media screen and (min-width: 1024px) {
-   header {
+ @media screen and (min-width: 1024px) { 
+    header {
       flex-direction: row;
       justify-content: space-around;
    }
 
    .redesSocias {
       text-align: center;
+      font-size: 1.5rem;
    }
 
    .redesSocias ul {
       list-style: none;
       padding: 0%;
-      margin-top: 30px;
+      /* margin-top: 30px; */
    }
 
    .redesSocias li {
@@ -210,28 +253,20 @@ input {
       margin-bottom: 20px;
    }
 
-   .redesSocias li:last-child {
-      margin-right: 0;
-   }
 
    .redesSocias a {
       text-decoration: none;
       color: #DDE6ED;
       margin-left: 0;
       text-decoration: none;
+      font-size: 1.5rem;
    }
 
    .redesSocias a:hover {
       text-decoration: none;
       color: #fff;
       transition: 0.3s all;
-      cursor: pointer;
-   }
-
-   .container {
-      display: flex;
-      margin-right: 25px;
-      margin-top: 50px;
+      cursor: pointer; 
    }
 
    .pitch {
