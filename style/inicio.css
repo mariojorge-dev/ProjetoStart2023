@@ -1,0 +1,102 @@
+
+
+.logo-container {
+    margin-right: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+nav ul li a:hover {
+    color: #0000CD;
+}
+
+.carousel-container {
+    background-color: #292424;
+    position: relative;
+    text-align: center;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 728px;
+    height: 410px;
+}
+
+.subtitulo-algo {
+    background-color: #292424;
+    color: #6959CD;
+    padding: 20px;
+    text-align: center;
+}
+
+.algo-container {
+    background-color: #292424;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+}
+
+.box {
+    justify-content: space-between;
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.outro-container {
+    background-color: #292424;
+    color: #6959CD;
+    text-align: center;
+}
+
+/* frase do video */
+
+.subtitulo {
+    padding: 10px;
+    background-color: #292424;
+    font-size: 20px;
+}
+
+/* frase do video */
+
+/* video */
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.video {
+    flex: 1;
+}
+
+.video iframe {
+    width: 728px;
+    height: 450px;
+    
+}
+
+/* video */
