@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/form.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="icon" href="Img/favicon.ico">
+    <title>Seu Site</title>
+</head>
+
+<body>
+    <header>
+        <div id="title">
+            <img src="Img/logopequena.png" alt="">
+    
+        </div>
+        <ul>
+            <a href="index.html">
+                <li>Inicio</li>
+            </a>
+            <!-- novo inicio -->
+            <a href="inicio.html">
+                <li>novo inicio</li>
+            </a>
+            <!-- novo inicio -->
+            <a href="cursos.html">
+                <li>Cursos</li>
+            </a>
+            <a href="tela_sobreNos.html">
+                <li>Sobre</li>
+            </a>
+            <a href="form.html">
+                <li>Contribua</li>
+            </a>
+    
+            <div class="dropdown-btn">Cadastre-se
+                <div class="dropdown-content">
+                    <a href="cadastrogeral.html">Usuario</a>
+                    <a href="cadastroempreendedor.html">Empreendedor</a>
+                </div>
+            </div>
+    
+        </ul>
+    </header>
+
+    <div class="formulario-container">
+        <form id="formulario">
+            <div class="input-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="input-group">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" required>
+            </div>
+            <div class="input-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="tipo-curso">Escolha o tipo de curso:</label>
+                <select id="tipo-curso" name="tipo-curso" required>
+                    <option value="front-end">Front-end</option>
+                    <option value="back-end">Back-end</option>
+                    <option value="full-stack">Full-stack</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="12" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    
+</body>
+
+</html>
