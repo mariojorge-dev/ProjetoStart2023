@@ -31,8 +31,9 @@ a {
 }
 
 a:hover {
-    color: #fff;
-    transition: 0.3s all;
+color: #fff;
+   transition: 40ms all;
+   border-bottom: 3px solid #e74908;
 }
 
 /* Estilo do botão */

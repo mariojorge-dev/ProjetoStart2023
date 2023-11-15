@@ -15,8 +15,6 @@ header {
    justify-content: space-around;
    align-items: center;
    width: 100%;
-   border-bottom: 2px solid #526D82;
-
 }
 
 
@@ -33,7 +31,8 @@ a {
 
 a:hover {
    color: #fff;
-   transition: 0.3s all;
+   transition: 40ms all;
+   border-bottom: 3px solid #e74908;
 }
 
 
@@ -43,7 +42,7 @@ a:hover {
    font-size: 16px;
    border: none;
    cursor: pointer;
-   border: 2px solid #DDE6ED;
+   border: 2px solid #e74908;
    padding: 5px;
    padding-left: 20px;
    padding-right: 20px;
@@ -81,7 +80,7 @@ a:hover {
 
 /* Mudar a cor do item do menu ao passar o mouse sobre ele */
 .dropdown-content a:hover {
-   background-color: #526D82;
+   background-color: #1d89ba;
 }
 
 /* Mostrar o menu quando o botão é clicado */
