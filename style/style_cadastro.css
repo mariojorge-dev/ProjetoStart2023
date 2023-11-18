@@ -1,12 +1,23 @@
 body {
-    background-color: #27374D;
-    color: aliceblue;
     font-family: poppinsregular;
-    margin: 0;
-    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.background-image-fixed {
+     
+    background-image: url("/components/images/alunos.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    position: relative;
+    
+
 }
 
 header {
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -15,10 +26,16 @@ header {
     border-bottom: 2px solid #526D82;
 }
 
-#title {
-    flex-direction: column;
-    line-height: 10px;
+
+header ul {
+    margin-left: 30%;
 }
+
+.logo {
+    margin-left: 10%;
+}
+
+
 
 li {
     display: inline-block;
@@ -26,13 +43,14 @@ li {
 }
 
 a {
-    color: #DDE6ED;
+    color: rgb(12, 26, 221);
     text-decoration: none;
 }
 
 a:hover {
     color: #fff;
-    transition: 0.3s all;
+    transition: 40ms all;
+    border-bottom: 3px solid #e74908;
 }
 
 /* Estilo do botão */
@@ -47,11 +65,11 @@ a:hover {
     padding-right: 20px;
     border-radius: 20px;
     color: #DDE6ED;
-    
- }
- 
- /* Estilo do conteúdo do menu (inicialmente oculto) */
- .dropdown-content {
+
+}
+
+/* Estilo do conteúdo do menu (inicialmente oculto) */
+.dropdown-content {
     display: none;
     position: absolute;
     min-width: 100px;
@@ -60,39 +78,37 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     color: #FFF;
-    left: 76%;
+    left: 88%;
     transform: translateX(0%);
     margin-top: 6px;
- 
- 
- }
- 
- /* Estilo dos itens do menu */
- .dropdown-content a {
+
+
+}
+
+/* Estilo dos itens do menu */
+.dropdown-content a {
     padding: 12px 16px;
     display: block;
     text-decoration: none;
     color: #fff;
     transition: 0.5s all;
     border-radius: 15px;
- }
- 
- /* Mudar a cor do item do menu ao passar o mouse sobre ele */
- .dropdown-content a:hover {
+}
+
+/* Mudar a cor do item do menu ao passar o mouse sobre ele */
+.dropdown-content a:hover {
     background-color: #526D82;
- }
- 
- /* Mostrar o menu quando o botão é clicado */
- .dropdown-btn:hover .dropdown-content {
+}
+
+/* Mostrar o menu quando o botão é clicado */
+.dropdown-btn:hover .dropdown-content {
     display: block;
- }
+}
 
 
 h1 {
     font-weight: 200;
 }
-
-
 
 .container {
     max-width: 1200px;

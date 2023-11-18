@@ -1,217 +1,203 @@
-
-
 body {
-
     font-family: poppinsregular;
-    margin: 0;
-    padding: 0px;
-    height: 100vh;
-    margin-top: 3%;
-
-    
-    
-  }
- 
- 
- 
-  .background-image-fixed {
-     
-     background-image: url("/components/images/alunos.jpg");
-     background-size: cover; 
-     background-position: center; 
-     background-attachment: fixed;
-     position: relative;
-     
- 
- }
- 
- 
- 
- 
- li {
-     display: flex;
-    
- 
- }
- 
- 
- header {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-     align-items: center;
-     width: 100%;
-     border-bottom: 2px solid #526D82;
-     margin-top: 1%;
-     
-  }
-  header ul {
-     display: flex;
-     width: 600px;
-     justify-content: space-between;
-     
-  
-  }
-  
-  ul {
-    margin: 10px;
-    padding: 0;
+    justify-content: space-between;
     align-items: center;
    
- }
- 
- 
-  .dropdown-btn {
-     display: inline-block;
-     font-size: 16px;
-     border: none;
-     cursor: pointer;
-     border: 2px solid #e74908;
-     padding: 5px;
-     padding-left: 20px;
-     padding-right: 20px;
-     border-radius: 20px;
-     color: #DDE6ED;
+}
+
+.background-image-fixed {
      
-  }
- 
- 
-  .dropdown-content {
-     display: none;
-     position: absolute;
-     min-width: 100px;
-     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-     z-index: 1;
-     background-color: rgba(0, 0, 0, 0.5);
-     border-radius: 15px;
-     color: #FFF;
-     left: 78%;
-     transform: translateX(0%);
-     margin-top: 6px;
-  
-  
-  }
- 
-  /* Estilo dos itens do menu */
- .dropdown-content a {
-     padding: 12px 16px;
-     display: block;
-     text-decoration: none;
-     color: #fff;
-     transition: 0.5s all;
-     border-radius: 15px;
- 
-  }
-  
-  /* Mudar a cor do item do menu ao passar o mouse sobre ele */
-  .dropdown-content a:hover {
-     background-color: #1d89ba;
-  }
-  
-  /* Mostrar o menu quando o botão é clicado */
-  .dropdown-btn:hover .dropdown-content {
-     display: block;
-  }
- 
- a {
-    color: #DDE6ED;
+    background-image: url("/components/images/alunos.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    position: relative;
+    
+
+}
+
+header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid #526D82;
+}
+
+
+header ul {
+    margin-left: 30%;
+}
+
+.logo {
+    margin-left: 10%;
+}
+
+
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: rgb(12, 26, 221);
     text-decoration: none;
- }
- 
- a:hover {
+}
+
+a:hover {
     color: #fff;
     transition: 40ms all;
     border-bottom: 3px solid #e74908;
- }
- 
-  .logo-container {
-     margin-right: 50px;
- }
- 
- .carousel-container {
-     
-     position: relative;
-     text-align: center;
-     
- }
- 
- .slide {
-     display: none;
- }
- 
- .slide img {
-     width: 728px;
-     height: 410px;
- }
- 
- .subtitulo-algo {
-     
-     color: #FFf;
-     padding: 20px;
-     text-align: center;
- }
- 
- .algo-container {
-     
-     text-align: center;
-     color: #FFFFFF;
-     padding: 20px;
-     display: flex;
- }
- 
- .box {
-     justify-content: space-between;
-     flex: 1;
-     margin: 10px;
-     text-align: center;
- }
- 
- .box img {
-     width: 100%;
-     height: auto;
- }
- 
- .outro-container {
-     
-     color: #6959CD;
-     text-align: center;
- }
- 
- /* frase do video */
- 
- .subtitulo {
-     padding: 10px;
-     color: #FFF;
-     font-size: 20px;
- }
- 
- /* frase do video */
- 
- /* video */
- .conteudo {
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
- }
- 
- 
- .video {
-     flex: 1;
- }
- 
- .video iframe {
-     width: 728px;
-     height: 450px;
- 
- }
- 
- .subtitulo-algo {
-     color: #FFF;
- }
- 
- .slide {
- 
- text-align: center;
- padding: 2%;
- 
- }
+}
+
+/* Estilo do botão */
+.dropdown-btn {
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #DDE6ED;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    color: #DDE6ED;
+
+}
+
+/* Estilo do conteúdo do menu (inicialmente oculto) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color: #FFF;
+    left: 88%;
+    transform: translateX(0%);
+    margin-top: 6px;
+
+
+}
+
+/* Estilo dos itens do menu */
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s all;
+    border-radius: 15px;
+}
+
+/* Mudar a cor do item do menu ao passar o mouse sobre ele */
+.dropdown-content a:hover {
+    background-color: #526D82;
+}
+
+/* Mostrar o menu quando o botão é clicado */
+.dropdown-btn:hover .dropdown-content {
+    display: block;
+}
+
+
+h1 {
+    font-weight: 200;
+}
+
+.logo-container {
+    margin-right: 50px;
+}
+
+.carousel-container {
+
+    position: relative;
+    text-align: center;
+
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 728px;
+    height: 410px;
+}
+
+.subtitulo-algo {
+
+    color: #FFf;
+    padding: 20px;
+    text-align: center;
+}
+
+.algo-container {
+
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+}
+
+.box {
+    justify-content: space-between;
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.outro-container {
+
+    color: #6959CD;
+    text-align: center;
+}
+
+/* frase do video */
+
+.subtitulo {
+    padding: 10px;
+    color: #FFF;
+    font-size: 20px;
+}
+
+/* frase do video */
+
+/* video */
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.video {
+    flex: 1;
+}
+
+.video iframe {
+    width: 728px;
+    height: 450px;
+
+}
+
+.subtitulo-algo {
+    color: #FFF;
+}
+
+.slide {
+
+    text-align: center;
+    padding: 2%;
+
+}

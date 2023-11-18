@@ -1,8 +1,121 @@
+body {
+    font-family: poppinsregular;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.background-image-fixed {
+
+    background-image: url("/components/images/alunos.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+
+
+}
+
+header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid #526D82;
+}
+
+
+
+header ul {
+    margin-left: 30%;
+}
+
+.logo {
+    margin-left: 10%;
+}
+
+
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: rgb(12, 26, 221);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    transition: 40ms all;
+    border-bottom: 3px solid #e74908;
+}
+
+/* Estilo do botão */
+.dropdown-btn {
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #DDE6ED;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    color: #DDE6ED;
+
+}
+
+/* Estilo do conteúdo do menu (inicialmente oculto) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color: #FFF;
+    left: 88%;
+    transform: translateX(0%);
+    margin-top: 6px;
+
+
+}
+
+/* Estilo dos itens do menu */
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s all;
+    border-radius: 15px;
+}
+
+/* Mudar a cor do item do menu ao passar o mouse sobre ele */
+.dropdown-content a:hover {
+    background-color: #526D82;
+}
+
+/* Mostrar o menu quando o botão é clicado */
+.dropdown-btn:hover .dropdown-content {
+    display: block;
+}
+
+
+h1 {
+    font-weight: 200;
+}
+
+
+
 
 /* sobre */
-#corposobre{
-    background-color: #0a6795;
-}
+
 .sessao-header {
     display: flex;
     justify-content: center;
@@ -15,14 +128,17 @@
     color: #FFF;
     margin-bottom: 0px;
     margin-bottom: 0px;
-    margin-top: 0;
+    margin-top: 2%;
     justify-items: center;
 }
 
-#mensagem {
-    color: #FFF;
-    
+.mensagem {
+    color: #fff;
+    text-align: center;
 }
+
+
+
 
 .conhecimentos {
     margin-left: 100px;
@@ -40,19 +156,18 @@
     background-color: #f37c3a;
     box-shadow: 10px 10px 30px black;
     margin-top: 20px;
-    border-radius: 10px;;
+    border-radius: 10px;
     width: 300px;
     height: 300px
-
 }
 
 .conhecimento:nth-child(2) {
-    grid-column: 2 / 5 ;
+    grid-column: 2 / 5;
     grid-row: 3 / 5;
     margin-right: 230px;
     background-color: #f37c3a;
     box-shadow: 10px 10px 30px black;
-    border-radius: 10px;;
+    border-radius: 10px;
     width: 300px;
     height: 300px
 }
@@ -73,7 +188,7 @@
     margin-top: 20px;
     background-color: #f37c3a;
     box-shadow: 10px 10px 30px black;
-    border-radius: 10px;;
+    border-radius: 10px;
     width: 300px;
     height: 300px
 }
@@ -84,26 +199,23 @@
     margin-left: 210px;
     background-color: #f37c3a;
     box-shadow: 10px 10px 30px black;
-    border-radius: 10px;;
+    border-radius: 10px;
     width: 300px;
     height: 300px
 }
 
-.imgens{
+.imgens {
     width: 50%;
 }
+
 .conhecimento:nth-child(6) {
     grid-column: 11 / 13;
     grid-row: 5 / -1;
     background-color: #f37c3a;
     box-shadow: 10px 10px 30px black;
-    border-radius: 10px;;
+    border-radius: 10px;
     width: 300px;
     height: 300px
-}
-
-.sessao-conhecimentos {
-    background-color: #0a6795;
 }
 
 

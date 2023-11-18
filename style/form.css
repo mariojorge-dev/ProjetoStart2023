@@ -1,22 +1,38 @@
 body {
-    background-color: #27374D;
     font-family: poppinsregular;
-    margin: 0;
-    padding: 0px;
-    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+   
+}
 
-
+.background-image-fixed {
+     
+    background-image: url("/components/images/alunos.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    position: relative;
+    
 
 }
 
 header {
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     border-bottom: 2px solid #526D82;
+}
 
+
+header ul {
+    margin-left: 30%;
+}
+
+.logo {
+    margin-left: 10%;
 }
 
 
@@ -27,15 +43,15 @@ li {
 }
 
 a {
-    color: #DDE6ED;
+    color: rgb(12, 26, 221);
     text-decoration: none;
 }
 
 a:hover {
     color: #fff;
-    transition: 0.3s all;
+    transition: 40ms all;
+    border-bottom: 3px solid #e74908;
 }
-
 
 /* Estilo do botão */
 .dropdown-btn {
@@ -62,7 +78,7 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     color: #FFF;
-    left: 76%;
+    left: 88%;
     transform: translateX(0%);
     margin-top: 6px;
 
@@ -88,6 +104,9 @@ a:hover {
 .dropdown-btn:hover .dropdown-content {
     display: block;
 }
+
+
+
 
 .formulario-container {
     max-width: 600px;

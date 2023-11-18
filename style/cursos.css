@@ -26,12 +26,12 @@ header {
     border-bottom: 2px solid #526D82;
 }
 
+header ul {
+    margin-left: 30%;
+}
 
-
-
-#title {
-    flex-direction: column;
-    line-height: 10px;
+.logo {
+    margin-left: 10%;
 }
 
 
@@ -76,7 +76,7 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     color: #FFF;
-    left: 78%;
+    left: 88%;
     transform: translateX(0%);
     margin-top: 6px;
 
