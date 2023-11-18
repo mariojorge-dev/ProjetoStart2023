@@ -1,24 +1,39 @@
 body {
-    background-color: #27374D;
     font-family: poppinsregular;
-    margin: 0;
-    padding: 0px;
-    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.background-image-fixed {
+     
+    background-image: url("/components/images/alunos.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    position: relative;
+    
+
 }
 
 header {
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;   
+    align-items: center;
     width: 100%;
     border-bottom: 2px solid #526D82;
 }
+
+
+
 
 #title {
     flex-direction: column;
     line-height: 10px;
 }
+
 
 li {
     display: inline-block;
@@ -31,9 +46,9 @@ a {
 }
 
 a:hover {
-color: #fff;
-   transition: 40ms all;
-   border-bottom: 3px solid #e74908;
+    color: #fff;
+    transition: 40ms all;
+    border-bottom: 3px solid #e74908;
 }
 
 /* Estilo do botão */
@@ -48,11 +63,11 @@ color: #fff;
     padding-right: 20px;
     border-radius: 20px;
     color: #DDE6ED;
-    
- }
- 
- /* Estilo do conteúdo do menu (inicialmente oculto) */
- .dropdown-content {
+
+}
+
+/* Estilo do conteúdo do menu (inicialmente oculto) */
+.dropdown-content {
     display: none;
     position: absolute;
     min-width: 100px;
@@ -61,33 +76,33 @@ color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     color: #FFF;
-    left: 76%;
+    left: 78%;
     transform: translateX(0%);
     margin-top: 6px;
- 
- 
- }
- 
- /* Estilo dos itens do menu */
- .dropdown-content a {
+
+
+}
+
+/* Estilo dos itens do menu */
+.dropdown-content a {
     padding: 12px 16px;
     display: block;
     text-decoration: none;
     color: #fff;
     transition: 0.5s all;
     border-radius: 15px;
- }
- 
- /* Mudar a cor do item do menu ao passar o mouse sobre ele */
- .dropdown-content a:hover {
+}
+
+/* Mudar a cor do item do menu ao passar o mouse sobre ele */
+.dropdown-content a:hover {
     background-color: #526D82;
- }
- 
- /* Mostrar o menu quando o botão é clicado */
- .dropdown-btn:hover .dropdown-content {
+}
+
+/* Mostrar o menu quando o botão é clicado */
+.dropdown-btn:hover .dropdown-content {
     display: block;
- }
- 
+}
+
 
 h1 {
     font-weight: 200;
@@ -110,7 +125,7 @@ h1 {
 
 
 .sessao-projetos {
-    background-color: #27374D;
+
     margin-bottom: 40px;
     padding-bottom: 50px;
 }
@@ -118,7 +133,7 @@ h1 {
 .projetos {
     display: flex;
     justify-content: space-evenly;
-    
+
 }
 
 .card {
@@ -131,7 +146,6 @@ h1 {
 .card-img-wrapper {
     width: 100%;
     height: 100%;
-    background-color: #262626;
     border-radius: 0.5rem;
 }
 

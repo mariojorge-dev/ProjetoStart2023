@@ -17,7 +17,7 @@ body::after {
     bottom: 0;
     left: 0;
     z-index: -2; /* Coloca a imagem de fundo atrás do overlay */
-    background-image: url("../imagens/indexFundo.jpg");
+    background-image: url("../components/images/alunos.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
