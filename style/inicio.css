@@ -2,7 +2,21 @@ body {
     font-family: poppinsregular;
     justify-content: space-between;
     align-items: center;
-   
+    z-index: 1;
+
+      
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Ajuste o último valor (0.5) para controlar a opacidade do overlay */
+    z-index: -1; /* Coloca o overlay atrás do conteúdo da página */
 }
 
 .background-image-fixed {
@@ -11,10 +25,10 @@ body {
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed;
-    position: relative;
     
 
 }
+
 
 header {
 
@@ -24,6 +38,7 @@ header {
     align-items: center;
     width: 100%;
     border-bottom: 2px solid #526D82;
+    
 }
 
 
@@ -43,14 +58,14 @@ li {
 }
 
 a {
-    color: rgb(12, 26, 221);
+    color: #38B6FF;
     text-decoration: none;
 }
 
 a:hover {
-    color: #fff;
+    color: #FF914D;
     transition: 40ms all;
-    border-bottom: 3px solid #e74908;
+    border-bottom: 3px solid rgba(227, 231, 8, 0.897);
 }
 
 /* Estilo do botão */
@@ -59,12 +74,12 @@ a:hover {
     font-size: 16px;
     border: none;
     cursor: pointer;
-    border: 2px solid #DDE6ED;
+    border: 2px solid #FF914D;
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 20px;
-    color: #DDE6ED;
+    color: #FF914D;
 
 }
 
@@ -78,7 +93,7 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     color: #FFF;
-    left: 88%;
+    left: 86.5%;
     transform: translateX(0%);
     margin-top: 6px;
 
@@ -90,13 +105,14 @@ a:hover {
     padding: 12px 16px;
     display: block;
     text-decoration: none;
-    color: #fff;
+    color: #38B6FF;
     transition: 0.5s all;
     border-radius: 15px;
 }
 
 /* Mudar a cor do item do menu ao passar o mouse sobre ele */
 .dropdown-content a:hover {
+    color: #FF914D;
     background-color: #526D82;
 }
 
