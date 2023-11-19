@@ -48,6 +48,7 @@ header ul {
 
 .logo {
     margin-left: 10%;
+    width: 100px;
 }
 
 
@@ -142,8 +143,10 @@ h1 {
 }
 
 .slide img {
-    width: 728px;
-    height: 410px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .subtitulo-algo {
@@ -159,11 +162,13 @@ h1 {
     color: #FFFFFF;
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .box {
     justify-content: space-between;
-    flex: 1;
+    flex: 1 1 200px;
     margin: 10px;
     text-align: center;
 }
@@ -185,6 +190,10 @@ h1 {
     padding: 10px;
     color: #FFF;
     font-size: 20px;
+}
+
+.subtitulo, .video {
+    text-align: center;
 }
 
 /* frase do video */
@@ -211,9 +220,40 @@ h1 {
     color: #FFF;
 }
 
+
+
 .slide {
 
     text-align: center;
     padding: 2%;
 
+}
+
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 80px; /* Reduzindo o tamanho do logo para telas menores */
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    ul a {
+        display: block;
+        text-align: center;
+    }
+
+    /* Ajustes para os slides */
+    .slide img {
+        width: 100%;
+    }
+
+    /* Ajustes para os elementos com imagem pequena */
+    .box {
+        flex: 1 1 calc(50% - 20px); /* Duas colunas por linha */
+    }
+
+    /* Estilos adicionais ou ajustes necessários para telas menores */
 }
