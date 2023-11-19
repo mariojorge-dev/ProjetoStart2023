@@ -7,7 +7,8 @@ body {
 
 .background-image-fixed {
 
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-image: url("/components/images/parede-de-tijolo-preto.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -24,6 +25,7 @@ header {
     align-items: center;
     width: 100%;
     border-bottom: 2px solid #526D82;
+    
 }
 
 
@@ -41,6 +43,7 @@ header ul {
 li {
     display: inline-block;
     margin: 20px;
+
 }
 
 a {
@@ -121,20 +124,29 @@ h1 {
     display: flex;
     justify-content: center;
     text-align: center;
+    color: #f1eaea;
 }
 
 
-.sessao-header h1 {
+/* .sessao-header h1 {
     font-size: 30px;
-    color: #070000;
+    color: #fff;
     margin-bottom: 0px;
     margin-bottom: 0px;
     margin-top: 2%;
     justify-items: center;
+} */
+
+.sessao-header h1 {
+    font-size: 30px;
+    color: #fff;
+    border-bottom: solid 3px #526D82;
+    margin-bottom: 50px;
 }
 
+
 .mensagem {
-    color: #000000;
+    color: #f1eaea;
     text-align: center;
 }
 
