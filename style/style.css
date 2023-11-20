@@ -35,9 +35,10 @@ li {
  
 }
 
+
 a {
    color: #DDE6ED;
-   text-decoration: none;
+   
 }
 
 a:hover {
@@ -72,7 +73,7 @@ a:hover {
    background-color: rgba(0, 0, 0, 0.5);
    border-radius: 15px;
    color: #FFF;
-   left: 76%;
+   left: 75%;
    transform: translateX(0%);
    margin-top: 6px;
 
