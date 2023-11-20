@@ -2,19 +2,7 @@ body {
     font-family: poppinsregular;
     justify-content: space-between;
     align-items: center;
-
-}
-
-.background-image-fixed {
-
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    background-image: url("/components/images/parede-de-tijolo-preto.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-
-
+    background-color: #526D82;
 }
 
 header {
@@ -24,7 +12,7 @@ header {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    border-bottom: 2px solid #526D82;
+    border-bottom: 2px solid white;
     
 }
 

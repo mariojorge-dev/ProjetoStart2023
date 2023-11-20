@@ -127,16 +127,6 @@ h1 {
     font-weight: 200;
 }
 
-.logo-container {
-    margin-right: 50px;
-}
-
-.carousel-container {
-
-    position: relative;
-    text-align: center;
-
-}
 
 .slide {
     display: none;
@@ -146,8 +136,9 @@ h1 {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin-left: 100px;
     border-radius: 10px;
+    
 }
 
 .subtitulo-algo {
