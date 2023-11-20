@@ -27,6 +27,9 @@ public class Usuario implements Serializable{
 
 	@Column(name = "nome", length = 200, nullable = true)
 	private String nome;
+	
+	@Column(name = "email", length = 200, nullable = true)
+	private String email;
 
 	@Column(name = "cpf", length = 11, nullable = true)
 	private String cpf;
@@ -66,6 +69,14 @@ public class Usuario implements Serializable{
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getCpf() {

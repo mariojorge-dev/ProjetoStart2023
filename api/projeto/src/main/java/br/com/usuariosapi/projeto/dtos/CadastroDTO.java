@@ -13,6 +13,8 @@ public class CadastroDTO {
 	private String cpf;
 
 	private String contato;
+	
+	private String email;
 
 	private String datanascimento;
 
@@ -25,6 +27,8 @@ public class CadastroDTO {
     private String cep;
 
     private String cidade;
+    
+    private String municipio;
 
     private String estado;
     
@@ -54,6 +58,22 @@ public class CadastroDTO {
 
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getMunicipio() {
+		return municipio;
+	}
+
+	public void setMunicipio(String municipio) {
+		this.municipio = municipio;
 	}
 
 	public String getContato() {
