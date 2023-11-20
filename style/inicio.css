@@ -147,6 +147,7 @@ h1 {
     height: auto;
     display: block;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
 .subtitulo-algo {
@@ -164,6 +165,10 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    /* background-color: #004AAD; */
+    border-radius: 10px;
+    /* box-shadow:-1px 5px 50px 15px black; */
+    border: none;
 }
 
 .box {
@@ -176,7 +181,22 @@ h1 {
 .box img {
     width: 100%;
     height: auto;
+    border-radius: 60px;
 }
+
+.box p {
+    width: 250px;
+    height: 60px;
+    background: #FF914D;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+    display:inline-flex;
+    justify-content: center;
+}
+
 
 .outro-container {
 
