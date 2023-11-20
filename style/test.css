@@ -1,0 +1,74 @@
+h1 {
+    font-weight: 200;
+ 
+ 
+ }
+ 
+ h2 {
+    font-size: 36px;
+    font-family: poppinsmedium;
+    color: #fff;
+ }
+ 
+ span {
+    color: #fff;
+ }
+ 
+ p {
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+    color: #fff;
+ 
+ }
+ 
+ form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+ }
+ 
+ form [type="submit"] {
+    height: 50px;
+    width: 30%;
+    background-color: #526D82;
+    color: #DDE6ED;
+    font-size: bold;
+    align-items: inline block;
+ 
+ }
+ 
+ form [type="submit"]:hover {
+    cursor: pointer;
+    transition: 0.3s all;
+    color: #fff;
+ }
+ 
+ 
+ input {
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    margin-top: 20px;
+    min-width: 200px;
+    
+ }
+ 
+ aside {
+    min-width: 300px;
+    min-height: 500px;
+    align-items: center;
+    justify-content: space-between;
+ 
+ }
+ 
+ main {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    height: 75%;
+    margin: 0 20px;
+ 
+ }
