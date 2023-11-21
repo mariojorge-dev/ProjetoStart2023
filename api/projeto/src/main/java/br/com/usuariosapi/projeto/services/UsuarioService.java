@@ -17,6 +17,7 @@ public class UsuarioService {
 	
 	@Autowired
 	IUsuario iUsuario;
+	
 
 	
 	public Usuario salvar(Usuario usuario) {
@@ -45,6 +46,10 @@ public class UsuarioService {
 	 *  
 	 * @param cadastroDTO Dto com os dados endereço e usuario.
 	 * */
+
+	@Autowired
+	private EmailService emailService;
+	
 	public Usuario buildUsuario(CadastroDTO cadastroDTO){
 		Usuario usuario = new Usuario();
 		Endereco endereco = new Endereco();
@@ -67,7 +72,7 @@ public class UsuarioService {
 //		endereco.setEndereco(cadastroDTO.getEndereco());
 //		endereco.setEstado(cadastroDTO.getEstado());
 //		endereco.setIdempresa(cadastroDTO.getIdempresa());
-		
+		emailService.enviarEmailTexto(usuario.getEmail(), "QQ", "QQ");
 		return usuario;
 	}
 
