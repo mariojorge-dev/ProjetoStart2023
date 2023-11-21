@@ -117,4 +117,7 @@ public class Endereco implements Serializable{
 		this.usuario = usuario;
 	}
 
+    public void setEmpreendedor(Empreendedor empreendedor) {
+    }
+
 }
