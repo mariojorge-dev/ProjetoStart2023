@@ -12,14 +12,11 @@
     <title>Cadastro</title>
 </head>
 
-
-
 <body class="background-image-fixed">
 
     <header>
         <div class="logo">
             <img src="Img/logopequena.png" alt="">
-
         </div>
         <ul>
             <!-- novo inicio -->
@@ -47,7 +44,6 @@
         </ul>
     </header>
 
-
     <div class="container">
         <div class="form-image">
             <img src="Img/Add User-rafiki.svg" alt="Imagem ilustrativa de cadastro">
@@ -55,90 +51,71 @@
         <div class="form">
             <form action="">
 
-                <!-- <input type="text" class="nome" name="nome" placeholder="Nome">
-            <input type="text" class="cpf" name="cpf" placeholder="Cpf">
-            <input type="text" class="contato"  name="contato" placeholder="Telefone">
-            <input type="text" class="datan" name="datan" placeholder="Data Nascimento">
-            <input type="text" class="sexo" name="sexo" placeholder="Sexo">
-            <input type="text" class="cep" name="cep" placeholder="Cep">
-            <input type="text" class="cidade" name="cidade" placeholder="Cidade">
-            <input type="text" class="estado" name="estado" placeholder="Estado">
-            <input type="text" class="endereco" name="endereco" placeholder="Endereço/Numero">
-            <input type="password" class="senha" name="senha" placeholder="Senha"> -->
-
                 <div class="input-group">
                     <div class="input-box">
-
-                        <label for="firstname">Nome da Empresa</label>
-                        <input class="nome" id="firstname" type="text" name="firstname"
+                        <label for="firstnameemp">Nome da Empresa</label>
+                        <input class="nomeemp" id="firstnameemp" type="text" name="firstnameemp"
                             placeholder="Digite o nome da empresa">
                     </div>
 
-
                     <div class="input-box">
-                        <label for="cnpj">CNPJ</label>
-                        <input class="cnpj" class="cnpj" id="cnpj" type="text" name="cpf"
+                        <label for="cnpjemp">CNPJ</label>
+                        <input class="cnpjemp" id="cnpjemp" type="text" name="cnpjemp"
                             placeholder="Digite o CNPJ da Empresa">
                     </div>
 
                     <div class="input-box">
-
-                        <label for="nascimento">Tempo de Atividade</label>
-                        <input class="datan" id="nascimento" type="date" name="nascimento" placeholder="">
+                        <label for="nascimentoemp">Tempo de Atividade</label>
+                        <input class="datanemp" id="nascimentoemp" type="date" name="nascimentoemp" placeholder="">
                     </div>
 
                     <div class="input-box">
-                        <label for="email">E-mail</label>
-                        <input class="email" id="email" type="email" name="email" placeholder="Digite o seu E-mail"
+                        <label for="emailemp">E-mail</label>
+                        <input class="emailemp" id="emailemp" type="email" name="emailemp"
+                            placeholder="Digite o seu E-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cepemp">Cep</label>
+                        <input class="cepemp" id="cepemp" type="text" name="cepemp" placeholder="Digite o seu cep"
                             required>
                     </div>
 
                     <div class="input-box">
-                        <label for="cep">Cep</label>
-                        <input class="cep" id="cep" type="text" name="cep" placeholder="Digite o seu cep" required>
+                        <label for="estadoemp">Estado</label>
+                        <input class="estadoemp" id="estadoemp" type="text" name="estadoemp"
+                            placeholder="Informe o seu estado" required>
                     </div>
 
-
                     <div class="input-box">
-                        <label for="estado">Estado</label>
-                        <input class="estado" id="estado" type="text" name="estado" placeholder="Informe o seu estado"
-                            required>
+                        <label for="cidadeemp">Cidade</label>
+                        <input class="cidadeemp" id="cidadeemp" type="text" name="cidadeemp"
+                            placeholder="Informe a sua Cidade" required>
                     </div>
 
-
                     <div class="input-box">
-                        <label for="cidade">Cidade</label>
-                        <input class="cidade" id="cidade" type="text" name="cidade" placeholder="Informe a sua Cidade"
-                            required>
-                    </div>
-
-
-                    <div class="input-box">
-                        <label for="municipio">Municipio</label>
-                        <input class="municipio" id="municipio" type="text" name="municipio"
+                        <label for="municipioemp">Municipio</label>
+                        <input class="municipioemp" id="municipioemp" type="text" name="municipioemp"
                             placeholder="Informe o seu municipio" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="endereco">Endereço</label>
-                        <input class="endereco" id="endereco" type="text" name="endereco"
+                        <label for="enderecoemp">Endereço</label>
+                        <input class="enderecoemp" id="enderecoemp" type="text" name="enderecoemp"
                             placeholder="Digite o seu endereço /Nº" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="number">Celular</label>
-                        <input class="contato" id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx"
-                            required>
+                        <label for="numberemp">Celular</label>
+                        <input class="contatoemp" id="numberemp" type="tel" name="numberemp"
+                            placeholder="(xx) xxxx-xxxx" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="password">Senha</label>
-                        <input class="senha" id="password" type="password" name="password"
+                        <label for="passwordemp">Senha</label>
+                        <input class="senhaemp" id="passwordemp" type="password" name="passwordemp"
                             placeholder="Digite sua senha" required>
                     </div>
-
-
-
 
                 </div>
 
@@ -149,21 +126,19 @@
 
                     <div class="gender-group">
                         <div class="gender-input">
-                            <input id="female" type="radio" name="gender" class="sexo">
-                            <label for="female">Feminino</label>
+                            <input id="femaleemp" type="radio" name="genderemp" class="sexoemp">
+                            <label for="femaleemp">Feminino</label>
                         </div>
 
                         <div class="gender-input">
-                            <input id="male" type="radio" name="gender" class="sexo">
-                            <label for="male">Masculino</label>
+                            <input id="maleemp" type="radio" name="genderemp" class="sexoemp">
+                            <label for="maleemp">Masculino</label>
                         </div>
 
                         <div class="gender-input">
-                            <input id="others" type="radio" name="gender" class="sexo">
-                            <label for="others">Outros</label>
+                            <input id="othersemp" type="radio" name="genderemp" class="sexoemp">
+                            <label for="othersemp">Outros</label>
                         </div>
-
-
                     </div>
                 </div>
 
@@ -171,8 +146,6 @@
                     <button>Cadastrar</button>
                 </div>
             </form>
-
-
         </div>
     </div>
 </body>
