@@ -3,6 +3,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(27, 29, 31);
+    margin: 0px 0px 50px 0px;
 }
 
 header {
@@ -106,6 +107,7 @@ h1 {
 }
 
 h2{
+    margin: 10px;
     margin-top: 0;
     color: white;
 }
@@ -138,7 +140,7 @@ h2{
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(2, 1fr); 
-    gap: 100px;
+    gap: 110px;
     margin-left: 30px;
     margin-right: 30px;
     
@@ -146,42 +148,44 @@ h2{
 .conhecimento{
     display: flex;
     margin-top: 30px;
-    box-shadow: 10px 10px 30px rgb(58, 57, 57);
+    box-shadow: 10px 10px 30px rgb(0, 0, 0);
     border-radius: 10px;
-    height: 300px;
+    height: 500px;
 }
 
 #corMissao{
-    background-color: #e4924f;
+    background-color: #d47f39;
 }
 #corObjetivo{
-    background-color: #8bad11;
+    background-color: #8bad11c4;
 }
 #corComoFaz{
-    background-color: #c14bd3;
+    background-color: #c14bd3b4;
 }
 #corEco{
-    background-color: #ae6421;
+    background-color: #ae3621;
 }
 #corTrabalhe{
     background-color: #059e4a;
 }
-#corDiversidade{
+#corQualidade{
     background-color: #7d11a1;
 }
 
 .imagem{
-    max-width: 50%;
+    max-width: 40%;
+    
 }
-
-.conhecimento-text {
-    margin: 5px;
+.imagem1{
+    max-width: 60%;
 }
 
 .conhecimento-text p {
-    font-size: 14px;
     font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
+    margin: 15px;
+    text-align: justify;
 }
 
 .conhecimento-img-wrapper {
@@ -203,6 +207,6 @@ h2{
 
 @media screen and (max-width: 700px) {
     section{
-        display: block; 
+        justify-items: column; 
     }
 }
