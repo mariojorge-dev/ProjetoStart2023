@@ -103,6 +103,7 @@ a:hover {
 h1 {
     font-size: larger;
     background-color: orange;
+    width: 1000px;
     border-radius: 10px;
 }
 
