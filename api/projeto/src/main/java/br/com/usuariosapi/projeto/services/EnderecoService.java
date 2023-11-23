@@ -23,7 +23,7 @@ public class EnderecoService {
 		endereco.setCidade(endDTO.getCidade());
 		endereco.setEndereco(endDTO.getEndereco());
 		endereco.setEstado(endDTO.getEstado());
-		endereco.setIdempresa(endDTO.getIdempresa());
+//		endereco.setIdempreendedor(endDTO.getIdempreendedor());
 		endereco.setIdendereco(endDTO.getIdendereco());
 		return endereco;
 	}

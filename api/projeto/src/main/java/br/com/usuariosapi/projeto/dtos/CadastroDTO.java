@@ -6,7 +6,6 @@ public class CadastroDTO {
 	private Integer idusuario;
 
 	
-	
 	@NotNull
 	private String nome;
 
@@ -34,7 +33,7 @@ public class CadastroDTO {
     
     private String endereco;
     
-    private Integer idempresa;
+    private Integer idempreendedor;
 
 	public Integer getIdusuario() {
 		return idusuario;
@@ -140,12 +139,12 @@ public class CadastroDTO {
 		this.estado = estado;
 	}
 
-	public Integer getIdempresa() {
-		return idempresa;
+	public Integer getIdempreendedor() {
+		return idempreendedor;
 	}
 
-	public void setIdempresa(Integer idempresa) {
-		this.idempresa = idempresa;
+	public void setIdempreendedor(Integer idempreendedor) {
+		this.idempreendedor = idempreendedor;
 	}
 
 	public String getEndereco() {
@@ -156,6 +155,5 @@ public class CadastroDTO {
 		this.endereco = endereco;
 	}
     
-    
-    
+   
 }

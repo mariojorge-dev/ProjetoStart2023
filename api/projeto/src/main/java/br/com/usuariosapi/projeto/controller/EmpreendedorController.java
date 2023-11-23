@@ -14,13 +14,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.usuariosapi.projeto.dtos.EmpreendedorDTO; // Importe a classe DTO correspondente
+import br.com.usuariosapi.projeto.dtos.CadastroEmpDTO;
 import br.com.usuariosapi.projeto.model.Empreendedor; // Importe a classe Empreendedor
 import br.com.usuariosapi.projeto.services.EmpreendedorService; // Importe o serviço correspondente
 
 @RestController
 @CrossOrigin("*")
-@RequestMapping("/empreendedores")
+@RequestMapping("/empreendedor")
 public class EmpreendedorController {
 
     @Autowired
@@ -28,7 +28,7 @@ public class EmpreendedorController {
 
     @GetMapping
     public List<Empreendedor> ListaEmpreendedores() {
-        return empreendedorService.ListaEmpreendedores();
+		return (List<Empreendedor>) empreendedorService.ListaEmpreendedor();
     }
 
     @GetMapping("/{id}")
@@ -37,7 +37,7 @@ public class EmpreendedorController {
     }
 
     @PostMapping
-    public Empreendedor criarEmpreendedor(@RequestBody EmpreendedorDTO empreendedor) {
+    public Empreendedor criarEmpreendedor(@RequestBody CadastroEmpDTO empreendedor) {
         var empreendedorNovo = empreendedorService.buildEmpreendedor(empreendedor);
         return empreendedorService.salvar(empreendedorNovo);
     }

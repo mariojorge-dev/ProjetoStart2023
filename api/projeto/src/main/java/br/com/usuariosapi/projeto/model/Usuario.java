@@ -10,15 +10,24 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@NoArgsConstructor
+@AllArgsConstructor
+@Setter
+@Getter
 @Entity
 @Table(name = "usuarios")
-public class Usuario implements Serializable{
+public class Usuario implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-/*
-	private static final CascadeType[] CascadeTypeALL = null;*/
+	/*
+	 * private static final CascadeType[] CascadeTypeALL = null;
+	 */
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,7 +36,7 @@ public class Usuario implements Serializable{
 
 	@Column(name = "nome", length = 200, nullable = true)
 	private String nome;
-	
+
 	@Column(name = "email", length = 200, nullable = true)
 	private String email;
 
@@ -45,14 +54,12 @@ public class Usuario implements Serializable{
 
 	@Column(name = "senha", columnDefinition = "TEXT", nullable = true)
 	private String senha;
-	
 
 	@OneToOne(mappedBy = "usuario", cascade = CascadeType.ALL)
 	private Endereco endereco;
 
-	
 	public Usuario() {
-		
+
 	}
 
 	public Integer getIdusuario() {

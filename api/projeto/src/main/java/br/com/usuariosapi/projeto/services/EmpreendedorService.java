@@ -7,7 +7,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.usuariosapi.projeto.dtos.EmpreendedorDTO;
+import br.com.usuariosapi.projeto.dtos.CadastroEmpDTO;
 import br.com.usuariosapi.projeto.model.Endereco;
 import br.com.usuariosapi.projeto.model.Empreendedor;  // Alteração para Empreendedor
 import br.com.usuariosapi.projeto.repositories.IEmpreendedor;  // Alteração para IEmpreendedor
@@ -22,7 +22,7 @@ public class EmpreendedorService {  // Alteração para EmpreendedorService
         return iEmpreendedor.save(empreendedor);
     }
 
-    public List<Empreendedor> ListaEmpreendedores() {
+    public List<Empreendedor> ListaEmpreendedor() {
         return (List<Empreendedor>) iEmpreendedor.findAll();
     }
 
@@ -45,15 +45,15 @@ public class EmpreendedorService {  // Alteração para EmpreendedorService
     @Autowired
     private EmailService emailService;
 
-    public Empreendedor buildEmpreendedor(EmpreendedorDTO empreendedor2) {
+    public Empreendedor buildEmpreendedor(CadastroEmpDTO cadastroEmpDTO) {
         Empreendedor empreendedor = new Empreendedor();
         Endereco endereco = new Endereco();
 
-        empreendedor.setEnderecoemp(endereco);
+        empreendedor.setEndereco(endereco);
         endereco.setEmpreendedor(empreendedor);
 
-        BeanUtils.copyProperties(empreendedor2, empreendedor);
-        BeanUtils.copyProperties(empreendedor2, endereco);
+        BeanUtils.copyProperties(cadastroEmpDTO, empreendedor);
+        BeanUtils.copyProperties(cadastroEmpDTO, endereco);
 
         emailService.enviarEmailTexto(empreendedor.getEmailemp(), "QQ", "QQ");
         return empreendedor;

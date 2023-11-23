@@ -4,14 +4,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const Icnpjemp = document.querySelector(".cnpjemp");
     const Idatanemp = document.querySelector(".datanemp");
     const Iemailemp = document.querySelector(".emailemp");
-    const Icepemp = document.querySelector(".cepemp");
-    const Iestadoemp = document.querySelector(".estadoemp");
-    const Icidadeemp = document.querySelector(".cidadeemp");
-    const Imunicipioemp = document.querySelector(".municipioemp");
-    const Ienderecoemp = document.querySelector(".enderecoemp");
+    const Icep = document.querySelector(".cep");
+    const Iestado = document.querySelector(".estado");
+    const Icidade = document.querySelector(".cidade");
+    const Imunicipio = document.querySelector(".municipio");
+    const Iendereco = document.querySelector(".endereco");
     const Icontatoemp = document.querySelector(".contatoemp");
     const Isenhaemp = document.querySelector(".senhaemp");
-    const Isexoemp = document.querySelector(".sexoemp");
 
     function cadastrar() {
         fetch("http://localhost:8080/empreendedor", {
@@ -25,14 +24,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 cnpj: Icnpjemp.value,
                 datanascimento: Idatanemp.value,
                 email: Iemailemp.value,
-                cep: Icepemp.value,
-                estado: Iestadoemp.value,
-                cidade: Icidadeemp.value,
-                municipio: Imunicipioemp.value,
-                endereco: Ienderecoemp.value,
+                cep: Icep.value,
+                estado: Iestado.value,
+                cidade: Icidade.value,
+                municipio: Imunicipio.value,
+                endereco: Iendereco.value,
                 contato: Icontatoemp.value,
                 senha: Isenhaemp.value,
-                sexo: Isexoemp.value
             })
         })
             .then(function (res) { console.log(res) })
@@ -44,14 +42,13 @@ document.addEventListener('DOMContentLoaded', function () {
         Icnpjemp.value = "";
         Idatanemp.value = "";
         Iemailemp.value = "";
-        Icepemp.value = "";
-        Iestadoemp.value = "";
-        Icidadeemp.value = "";
-        Imunicipioemp.value = "";
-        Ienderecoemp.value = "";
+        Icep.value = "";
+        Iestado.value = "";
+        Icidade.value = "";
+        Imunicipio.value = "";
+        Iendereco.value = "";
         Icontatoemp.value = "";
         Isenhaemp.value = "";
-        Isexoemp.value = "";
     }
 
     formularioemp.addEventListener('submit', function (event) {
@@ -129,28 +126,3 @@ document.addEventListener('DOMContentLoaded', function () {
         // ... Outros scripts ou funções que você possa ter ...
     });
 });
-
-function obterClasseDoSexoSelecionado() {
-    // Obtém todos os elementos com a classe 'sexoemp'
-    var botoesRadio = document.getElementsByClassName('sexoemp');
-
-    // Itera sobre os botões de rádio para encontrar o selecionado
-    for (var i = 0; i < botoesRadio.length; i++) {
-        if (botoesRadio[i].checked) {
-            // Retorna a classe do botão de rádio selecionado
-            return botoesRadio[i].classList[1]; // Assume que a classe desejada é a segunda na lista de classes
-        }
-    }
-
-    // Retorna null se nenhum botão de rádio estiver selecionado
-    return null;
-}
-
-// Exemplo de uso
-var classeSelecionada = obterClasseDoSexoSelecionado();
-if (classeSelecionada !== null) {
-    console.log('Classe do sexo selecionado:', classeSelecionada);
-} else {
-    console.log('Nenhum sexo selecionado');
-}
-

@@ -41,14 +41,16 @@ public class Endereco implements Serializable{
 
     @Column(name = "endereco", length = 100, nullable = true)
     private String endereco;
-
-    @Column(name = "idempresa")
-    private Integer idempresa;
     
 	@OneToOne
     @JoinColumn(name="idusuario")
 	@JsonIgnore
     private Usuario usuario;
+
+	@OneToOne
+    @JoinColumn(name="idempreendedor")
+	@JsonIgnore
+    private Empreendedor empreendedor;
     
     public Endereco() {
     }
@@ -101,13 +103,7 @@ public class Endereco implements Serializable{
 		this.endereco = endereco;
 	}
 
-	public Integer getIdempresa() {
-		return idempresa;
-	}
 
-	public void setIdempresa(Integer idempresa) {
-		this.idempresa = idempresa;
-	}
 
 	public Usuario getUsuario() {
 		return usuario;
@@ -117,7 +113,13 @@ public class Endereco implements Serializable{
 		this.usuario = usuario;
 	}
 
-    public void setEmpreendedor(Empreendedor empreendedor) {
-    }
+	public Empreendedor getEmpreendedor() {
+		return empreendedor;
+	}
 
+	public void setEmpreendedor(Empreendedor empreendedor) {
+		this.empreendedor = empreendedor;
+	}
+	
+	
 }

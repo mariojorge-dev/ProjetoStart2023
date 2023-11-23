@@ -18,12 +18,9 @@ public class UsuarioService {
 	@Autowired
 	IUsuario iUsuario;
 	
-
-	
 	public Usuario salvar(Usuario usuario) {
 	return iUsuario.save(usuario);
 	}
-
 
 	public List<Usuario> ListaUsuarios() {
 		return (List<Usuario>) iUsuario.findAll();
@@ -71,15 +68,13 @@ public class UsuarioService {
 //		endereco.setCidade(cadastroDTO.getCidade());
 //		endereco.setEndereco(cadastroDTO.getEndereco());
 //		endereco.setEstado(cadastroDTO.getEstado());
-//		endereco.setIdempresa(cadastroDTO.getIdempresa());
+//		endereco.setIdempreendedor(cadastroDTO.getIdempreendedor());
 		emailService.enviarEmailTexto(usuario.getEmail(), "QQ", "QQ");
 		return usuario;
 	}
 
-
 	public Usuario buscarPorId(Integer id) {
 		return iUsuario.findById(id).orElseThrow(() -> new RuntimeException("Usuario Não Encontrado"));
-		
 	}
 }
 

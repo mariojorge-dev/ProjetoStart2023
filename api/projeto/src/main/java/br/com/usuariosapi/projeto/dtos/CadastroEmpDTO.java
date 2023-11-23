@@ -3,9 +3,7 @@ package br.com.usuariosapi.projeto.dtos;
 import jakarta.validation.constraints.NotNull;
 
 public class CadastroEmpDTO {
-    
-    private Integer empreendedor;
-
+    private Integer idempreendedor;
 	
 	
 	@NotNull
@@ -19,141 +17,141 @@ public class CadastroEmpDTO {
 
 	private String datanascimentoemp;
 
-	private String sexoemp;
-
 	private String senhaemp;
 	
-    private Integer idenderecoemp;
+    private Integer idendereco;
 	
-    private String cepemp;
+    private String cep;
 
-    private String cidadeemp;
+    private String cidade;
     
-    private String municipioemp;
+    private String municipio;
 
-    private String estadoemp;
+    private String estado;
     
-    private String enderecoemp;
+    private String endereco;
     
-    private Integer idempresa;
+    private String idusuario;
+ 
+    public Integer getIdempreemdedor() {
+		return idempreendedor;
+	}
 
-    public Integer getEmpreendedor() {
-        return empreendedor;
-    }
+	public void setIdempreemdedor(Integer idempreendedor) {
+		this.idempreendedor = idempreendedor;
+	}
 
-    public void setEmpreendedor(Integer empreendedor) {
-        this.empreendedor = empreendedor;
-    }
+	public String getNomeemp() {
+		return nomeemp;
+	}
 
-    public String getNomeemp() {
-        return nomeemp;
-    }
+	public void setNomeemp(String nomeemp) {
+		this.nomeemp = nomeemp;
+	}
 
-    public void setNomeemp(String nomeemp) {
-        this.nomeemp = nomeemp;
-    }
+	public String getCnpjemp() {
+		return cnpjemp;
+	}
 
-    public String getCnpjemp() {
-        return cnpjemp;
-    }
+	public void setCnpjemp(String cnpjemp) {
+		this.cnpjemp = cnpjemp;
+	}
 
-    public void setCnpjemp(String cnpjemp) {
-        this.cnpjemp = cnpjemp;
-    }
+	public String getContatoemp() {
+		return contatoemp;
+	}
 
-    public String getContatoemp() {
-        return contatoemp;
-    }
+	public void setContatoemp(String contatoemp) {
+		this.contatoemp = contatoemp;
+	}
 
-    public void setContatoemp(String contatoemp) {
-        this.contatoemp = contatoemp;
-    }
+	public String getEmailemp() {
+		return emailemp;
+	}
 
-    public String getEmailemp() {
-        return emailemp;
-    }
+	public void setEmailemp(String emailemp) {
+		this.emailemp = emailemp;
+	}
 
-    public void setEmailemp(String emailemp) {
-        this.emailemp = emailemp;
-    }
+	public String getDatanascimentoemp() {
+		return datanascimentoemp;
+	}
 
-    public String getDatanascimentoemp() {
-        return datanascimentoemp;
-    }
+	public void setDatanascimentoemp(String datanascimentoemp) {
+		this.datanascimentoemp = datanascimentoemp;
+	}
 
-    public void setDatanascimentoemp(String datanascimentoemp) {
-        this.datanascimentoemp = datanascimentoemp;
-    }
+	public String getSenhaemp() {
+		return senhaemp;
+	}
 
-    public String getSexoemp() {
-        return sexoemp;
-    }
+	public void setSenhaemp(String senhaemp) {
+		this.senhaemp = senhaemp;
+	}
 
-    public void setSexoemp(String sexoemp) {
-        this.sexoemp = sexoemp;
-    }
+	public Integer getIdendereco() {
+		return idendereco;
+	}
 
-    public String getSenhaemp() {
-        return senhaemp;
-    }
+	public void setIdendereco(Integer idendereco) {
+		this.idendereco = idendereco;
+	}
 
-    public void setSenhaemp(String senhaemp) {
-        this.senhaemp = senhaemp;
-    }
+	public String getCep() {
+		return cep;
+	}
 
-    public Integer getIdenderecoemp() {
-        return idenderecoemp;
-    }
+	public void setCep(String cep) {
+		this.cep = cep;
+	}
 
-    public void setIdenderecoemp(Integer idenderecoemp) {
-        this.idenderecoemp = idenderecoemp;
-    }
+	public String getCidade() {
+		return cidade;
+	}
 
-    public String getCepemp() {
-        return cepemp;
-    }
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
+	}
 
-    public void setCepemp(String cepemp) {
-        this.cepemp = cepemp;
-    }
+	public String getMunicipio() {
+		return municipio;
+	}
 
-    public String getCidadeemp() {
-        return cidadeemp;
-    }
+	public void setMunicipio(String municipio) {
+		this.municipio = municipio;
+	}
 
-    public void setCidadeemp(String cidadeemp) {
-        this.cidadeemp = cidadeemp;
-    }
+	public String getEstado() {
+		return estado;
+	}
 
-    public String getMunicipioemp() {
-        return municipioemp;
-    }
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
 
-    public void setMunicipioemp(String municipioemp) {
-        this.municipioemp = municipioemp;
-    }
+	public String getEndereco() {
+		return endereco;
+	}
 
-    public String getEstadoemp() {
-        return estadoemp;
-    }
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
 
-    public void setEstadoemp(String estadoemp) {
-        this.estadoemp = estadoemp;
-    }
+	public Integer getIdempreendedor() {
+		return idempreendedor;
+	}
 
-    public String getEnderecoemp() {
-        return enderecoemp;
-    }
+	public void setIdempreendedor(Integer idempreendedor) {
+		this.idempreendedor = idempreendedor;
+	}
 
-    public void setEnderecoemp(String enderecoemp) {
-        this.enderecoemp = enderecoemp;
-    }
+	public String getIdusuario() {
+		return idusuario;
+	}
 
-    public Integer getIdempresa() {
-        return idempresa;
-    }
+	public void setIdusuario(String idusuario) {
+		this.idusuario = idusuario;
+	}
+	
 
-    public void setIdempresa(Integer idempresa) {
-        this.idempresa = idempresa;
-    }
 }

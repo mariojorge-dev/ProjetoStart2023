@@ -12,11 +12,11 @@ public class EnderecoDTO {
 
     private String endereco;
 
-    private Integer idempresa;
+    private Integer idempreendedor;
 
     private Integer idusuario;
 
-	public EnderecoDTO(Integer idendereco, String cep, String cidade, String estado, String endereco, Integer idempresa,
+	public EnderecoDTO(Integer idendereco, String cep, String cidade, String estado, String endereco, Integer idempreendedor,
 			Integer idusuario) {
 		super();
 		this.idendereco = idendereco;
@@ -24,7 +24,7 @@ public class EnderecoDTO {
 		this.cidade = cidade;
 		this.estado = estado;
 		this.endereco = endereco;
-		this.idempresa = idempresa;
+		this.idempreendedor = idempreendedor;
 		this.idusuario = idusuario;
 	}
 
@@ -72,12 +72,12 @@ public class EnderecoDTO {
 		this.endereco = endereco;
 	}
 
-	public Integer getIdempresa() {
-		return idempresa;
+	public Integer getIdempreendedor() {
+		return idempreendedor;
 	}
 
-	public void setIdempresa(Integer idempresa) {
-		this.idempresa = idempresa;
+	public void setIdempreendedor(Integer idempreendedor) {
+		this.idempreendedor = idempreendedor;
 	}
 
 	public Integer getIdusuario() {

@@ -1,5 +1,7 @@
 package br.com.usuariosapi.projeto.model;
 
+import java.io.Serializable;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -9,70 +11,105 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
-
-/**
- * 
- */
-@ToString
-@Data
-@EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter
-/**
- * @return
- */
 @Getter
 @Entity
 @Table(name = "empreendedor")
-public class Empreendedor {
+public class Empreendedor implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-/*
-	private static final CascadeType[] CascadeTypeALL = null;*/
+	/*
+	 * private static final CascadeType[] CascadeTypeALL = null;
+	 */
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "idempreendedor")
 	private Integer idempreendedor;
 
-	@Column(name = "nome", length = 200, nullable = true)
+	@Column(name = "nomeemp", length = 200, nullable = true)
 	private String nomeemp;
-	
-	@Column(name = "email", length = 200, nullable = true)
+
+	@Column(name = "emailemp", length = 200, nullable = true)
 	private String emailemp;
 
-	@Column(name = "cnpj", length = 11, nullable = true)
+	@Column(name = "cnpjemp", length = 20, nullable = true)
 	private String cnpjemp;
 
-	@Column(name = "contato", length = 15, nullable = true)
+	@Column(name = "contatoemp", length = 15, nullable = true)
 	private String contatoemp;
 
-	@Column(name = "tempo de atividade", length = 10, nullable = true)
-	private String tempodeatividadeemp;
-
-	@Column(name = "sexo", length = 9, nullable = true)
-	private String sexoemp;
-
-	@Column(name = "senha", columnDefinition = "TEXT", nullable = true)
+	@Column(name = "senhaemp", columnDefinition = "TEXT", nullable = true)
 	private String senhaemp;
-	
 
 	@OneToOne(mappedBy = "empreendedor", cascade = CascadeType.ALL)
-	private Endereco enderecoemp;
+	private Endereco endereco;
 
+	public Empreendedor() {
 
-	public static long getSerialversionuid() {
-		return serialVersionUID;
 	}
 
+	public Integer getIdempreendedor() {
+		return idempreendedor;
+	}
 
+	public void setIdempreendedor(Integer idempreendedor) {
+		this.idempreendedor = idempreendedor;
+	}
+
+	public String getNomeemp() {
+		return nomeemp;
+	}
+
+	public void setNomeemp(String nomeemp) {
+		this.nomeemp = nomeemp;
+	}
+
+	public String getEmailemp() {
+		return emailemp;
+	}
+
+	public void setEmailemp(String emailemp) {
+		this.emailemp = emailemp;
+	}
+
+	public String getCnpjemp() {
+		return cnpjemp;
+	}
+
+	public void setCnpjemp(String cnpjemp) {
+		this.cnpjemp = cnpjemp;
+	}
+
+	public String getContatoemp() {
+		return contatoemp;
+	}
+
+	public void setContatoemp(String contatoemp) {
+		this.contatoemp = contatoemp;
+	}
+
+	public String getSenhaemp() {
+		return senhaemp;
+	}
+
+	public void setSenhaemp(String senhaemp) {
+		this.senhaemp = senhaemp;
+	}
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+	
 }

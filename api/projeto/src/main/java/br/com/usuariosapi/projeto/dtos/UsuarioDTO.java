@@ -3,21 +3,14 @@ package br.com.usuariosapi.projeto.dtos;
 public class UsuarioDTO {
 
 	private Integer idusuario;
-
 	private String nome;
-
 	private String cpf;
-
 	private String contato;
-
 	private String datanascimento;
-
 	private String sexo;
-
 	private String senha;
-	
 	private EnderecoDTO endereco;
-	
+
 	public UsuarioDTO(Integer idusuario, String nome, String cpf, String contato, String datanascimento, String sexo,
 			String senha, EnderecoDTO endereco) {
 		super();
@@ -99,5 +92,4 @@ public class UsuarioDTO {
 		this.endereco = endereco;
 	}
 
-	
 }
