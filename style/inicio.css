@@ -144,6 +144,70 @@ h1 {
     border-radius: 10px;
     
 }
+form {
+   display: flex;
+   flex-direction: column;
+   width: 70%;
+}
+
+form [type="submit"] {
+   height: 50px;
+   width: 30%;
+   background-color: #526D82;
+   color: #DDE6ED;
+   font-size: bold;
+
+}
+
+form [type="submit"]:hover {
+   cursor: pointer;
+   transition: 0.3s all;
+   color: #fff;
+}
+
+
+input {
+    width: 70%;
+    height: 50px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    margin-top: 20px;
+   
+}
+
+main {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   height: 75%;
+   margin: 0 20px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ }
+ 
+ .user [type="submit"] {
+    height: 50px;
+    width: 30%;
+    background-color: #526D82;
+    color: #DDE6ED;
+    font-size: bold;
+ 
+ }
+ 
+ .user [type="submit"]:hover {
+    cursor: pointer;
+    transition: 0.3s all;
+    color: #fff;
+ }
+ 
+ 
 
 .subtitulo-algo {
 
@@ -160,9 +224,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    /* background-color: #004AAD; */
     border-radius: 10px;
-    /* box-shadow:-1px 5px 50px 15px black; */
     border: none;
 }
 
@@ -174,7 +236,7 @@ h1 {
 }
 
 .box img {
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 60px;
 }
@@ -182,14 +244,17 @@ h1 {
 .box p {
     width: 250px;
     height: 60px;
+    margin: 5px;
     background: #FF914D;
     font-size: 20px;
     color: white;
     border-radius: 10px;
     border: none;
     box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+    display: flex;
     display:inline-flex;
-    justify-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 
