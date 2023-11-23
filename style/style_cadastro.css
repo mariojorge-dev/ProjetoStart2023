@@ -286,3 +286,20 @@ h1 {
         margin-top: 0.5rem;
     }
 }
+
+/* Estilos gerais */
+
+/* Estilos para telas menores (ex: smartphones) */
+@media only screen and (max-width: 600px) {
+    /* Adicione estilos específicos para telas menores aqui */
+}
+
+/* Estilos para telas médias (ex: tablets) */
+@media only screen and (min-width: 601px) and (max-width: 2560px )  {
+    /* Adicione estilos específicos para telas médias aqui */
+}
+
+/* Estilos para telas maiores (ex: desktops) */
+@media only screen and (min-width: 1025px) {
+    /* Adicione estilos específicos para telas maiores aqui */
+}

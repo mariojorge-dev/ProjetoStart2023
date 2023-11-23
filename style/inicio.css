@@ -56,7 +56,6 @@ header ul {
 }
 
 
-
 li {
     display: inline-block;
     margin: 20px;
@@ -245,30 +244,19 @@ h1 {
 }
 
 
-@media screen and (max-width: 768px) {
-    .logo img {
-        width: 80px; /* Reduzindo o tamanho do logo para telas menores */
-    }
+/* Estilos gerais */
 
-    ul {
-        flex-direction: column;
-        gap: 10px;
-    }
+/* Estilos para telas menores (ex: smartphones) */
+@media only screen and (max-width: 600px) {
+    /* Adicione estilos específicos para telas menores aqui */
+}
 
-    ul a {
-        display: block;
-        text-align: center;
-    }
+/* Estilos para telas médias (ex: tablets) */
+@media only screen and (min-width: 601px) and (max-width: 2560px )  {
+    /* Adicione estilos específicos para telas médias aqui */
+}
 
-    /* Ajustes para os slides */
-    .slide img {
-        width: 100%;
-    }
-
-    /* Ajustes para os elementos com imagem pequena */
-    .box {
-        flex: 1 1 calc(50% - 20px); /* Duas colunas por linha */
-    }
-
-    /* Estilos adicionais ou ajustes necessários para telas menores */
+/* Estilos para telas maiores (ex: desktops) */
+@media only screen and (min-width: 1025px) {
+    /* Adicione estilos específicos para telas maiores aqui */
 }
