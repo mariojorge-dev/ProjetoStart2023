@@ -221,3 +221,17 @@ h1 {
     font-weight: 500;
     color: #fdf5f5;
 }
+
+@media only screen and (max-width: 600px) {
+    
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 2560px )  {
+    
+}
+
+
+@media only screen and (min-width: 1025px) {
+ 
+}
