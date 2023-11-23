@@ -7,7 +7,6 @@ body {
 }
 
 
-
 header {
 
     display: flex;
@@ -125,13 +124,15 @@ h1 {
     width: 30rem;
 }
 
-.form {
-    /*align-items: center; */
-    background-color: #f7f7f7;
+.formemp {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    background-color: #DDE6ED;
     padding: 1rem;
     margin-top: 1%;
 }
-
 
 .form-header {
 
@@ -158,8 +159,6 @@ h1 {
     align-items: baseline;
     flex-direction: column;
     margin: 0.4rem 0rem;
-    
-
 
 }
 
@@ -183,7 +182,7 @@ h1 {
     outline: 1px solid #526D82;
 }
 
-.input-box label, h6 {
+.input-box label{
     font-size: 0.8rem;
     font-weight: 600;
     color: #0a0a0ac0;
@@ -199,37 +198,20 @@ h1 {
 .continue-button button {
     width: 100%;
     margin-top: 25%;
-    align-items: center;
     border: none;
     background-color: #9DB2BF;
-    padding: 10px;
+    padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .continue-button button:hover {
-    background-color: #38B6FF;
+    background-color: #27374D;
 }
 
-@media screen and (max-width: 1330px) {
-    .form-image {
-        display: none;
-    }
-
-    .container {
-        width: 50%;
-    }
-
-    .form {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 1064px) {
-    .container {
-        width: 90%;
-        height: auto;
-    }
-
-
+.continue-button button a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fdf5f5;
 }

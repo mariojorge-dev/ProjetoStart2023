@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class LoginController {
     @Autowired
-    private UsuaioController repo;
+    private UsuaioController usuc;
 
     @GetMapping("/login")
     public String index(){
