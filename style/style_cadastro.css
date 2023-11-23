@@ -111,7 +111,7 @@ h1 {
 .container {
     justify-content: center;
     max-width: 1500px;
-    height: 80vh;
+    height: 55vh;
     display: flex;
 }
 
@@ -131,10 +131,10 @@ h1 {
 }
 
 .form {
+    margin-top: 20px;
     align-items: center; 
     background-color: #DDE6ED;
     padding: 1rem;
-    margin-top: 50px;
 } 
 
 
@@ -153,7 +153,7 @@ h1 {
     gap: 100px;
     row-gap: 5px;
     padding: 0.2rem 0;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .input-box {
@@ -190,10 +190,6 @@ h1 {
     font-size: 15;
     font-weight: 600;
     color: #0a0a0ac0;
-}
-
-h3{
-    margin-top: px;
 }
 
 .input-box input::placeholder {
