@@ -137,7 +137,7 @@ h1 {
     align-items: left;
     background-color: #DDE6ED;
     padding: 1rem;
-    margin-top: 1%;
+    margin-top: 1rem;
 }
 
 .form-header {
@@ -149,18 +149,17 @@ h1 {
 
 
 .input-group {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 100px;
+    row-gap: 5px;
     padding: 0.2rem 0;
-    margin-top: -3%;
-
-
-
+    margin-top: 30px;
 }
 
 .input-box {
-
     display: flex;
     align-items: baseline;
     flex-direction: column;
@@ -189,7 +188,7 @@ h1 {
 }
 
 .input-box label{
-    font-size: 0.8rem;
+    font-size: 15px;
     font-weight: 600;
     color: #0a0a0ac0;
 }
@@ -200,19 +199,19 @@ h1 {
 }
 
 
-
 .continue-button button {
     width: 100%;
-    margin-top: 25%;
+    margin-top: 10px;
     border: none;
     background-color: #9DB2BF;
     padding: 0.62rem;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    font-size: medium;
 }
 
 .continue-button button:hover {
-    background-color: #27374D;
+    background-color: #1664d1;
 }
 
 .continue-button button a {
