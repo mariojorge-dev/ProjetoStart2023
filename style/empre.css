@@ -183,8 +183,7 @@ h1 {
     outline: 1px solid #526D82;
 }
 
-.input-box label,
-.gender-title h6 {
+.input-box label, h6 {
     font-size: 0.8rem;
     font-weight: 600;
     color: #0a0a0ac0;
@@ -195,50 +194,21 @@ h1 {
 
 }
 
-.gender-group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.62rem;
-    padding: 0 .5rem;
-}
 
-.gender-input {
-    display: flex;
-    align-items: center;
-
-}
-
-.gender-input input {
-    margin-right: 0.35rem;
-
-
-}
-
-.gender-input label {
-    font-size: 0.79rem;
-    font-weight: 600;
-    color: #000000c0;
-}
 
 .continue-button button {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 25%;
+    align-items: center;
     border: none;
     background-color: #9DB2BF;
-    padding: 0.62rem;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .continue-button button:hover {
-    background-color: #27374D;
-}
-
-.continue-button button a {
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #fdf5f5;
+    background-color: #38B6FF;
 }
 
 @media screen and (max-width: 1330px) {
@@ -261,28 +231,5 @@ h1 {
         height: auto;
     }
 
-    .input-group {
-        flex-direction: column;
-        z-index: 5;
-        padding-right: 5rem;
-        max-height: 10rem;
-        overflow-y: scroll;
-        flex-wrap: nowrap;
-    }
 
-    .gender-inputs {
-        margin-top: 2rem;
-    }
-
-    .gender-group {
-        flex-direction: column;
-    }
-
-    .gender-title h6 {
-        margin: 0;
-    }
-
-    .gender-input {
-        margin-top: 0.5rem;
-    }
 }
