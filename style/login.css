@@ -33,11 +33,13 @@ h1 {
  }
 
 
+
  .Entrar {
-   height: 30px;
-    width: 100%;
-    background-color: rgb(150, 110, 36);
-    color: #DDE6ED;
+   height: 40px;
+    width: 60%;
+    align-items: center;
+    background-color: #9DB2BF;
+    color: black;
     font-size:medium;
     cursor: pointer;
     border-radius: 20px;
@@ -45,8 +47,9 @@ h1 {
 
 
  .Entrar:hover{
-    transition: 0.3s all;
-    color: #1c547e;
+    transition: 0.5s all;
+    background-color: #1489d1;
+    color: white;
  }
  
  
@@ -61,14 +64,7 @@ h1 {
     min-width: 200px;
     
  }
- 
- aside {
-    min-width: 300px;
-    min-height: 300px;
-    align-items: center;
-    margin-right: 100px;
-    margin-top: 40px;
- }
+
  
  main {
     display: flex;
