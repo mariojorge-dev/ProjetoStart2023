@@ -32,7 +32,14 @@ header ul {
     margin-left: 10%;
 }
 
-
+h1 {
+    font-weight: 200;
+}
+p {
+   margin-left: 7px ;
+   font-weight: 600;
+   font-size: 15px;
+}
 
 li {
     display: inline-block;
@@ -104,9 +111,7 @@ a:hover {
 }
 
 
-h1 {
-    font-weight: 200;
-}
+
 
 .container {
     justify-content: center;
@@ -189,7 +194,6 @@ h1 {
 
 .input-box label,
 .gender-title {
-
     font-size: 15px;
     font-weight: 600;
     color: #0a0a0ac0;
@@ -205,6 +209,7 @@ h1 {
     display: flex;
     gap: 20px;
     margin-top: 0.62rem;
+    margin-left: 8px;
 }
 
 .gender-input {
@@ -307,5 +312,4 @@ h1 {
 
 /* Estilos para telas maiores (ex: desktops) */
 @media only screen and (min-width: 1025px) {
-    /* Adicione estilos específicos para telas maiores aqui */
-}
+    /* Adicione estilos específicos para telas maiores aqui */}
