@@ -34,7 +34,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border-bottom: 2px solid #ffffff;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid white;
     
 }
 

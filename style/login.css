@@ -31,23 +31,24 @@ h1 {
     
     
  }
- 
- form [type="submit"] {
-    height: 50px;
-    width: 100%;
-    background-color: #526D82;
-    color: #DDE6ED;
-    font-size:larger;
-    align-items: inline block;
-    margin: 0;
- }
- 
- form [type="submit"]:hover {
-    cursor: pointer;
-    transition: 0.3s all;
-    color: orange;
 
+
+ .Entrar {
+   height: 30px;
+    width: 100%;
+    background-color: rgb(150, 110, 36);
+    color: #DDE6ED;
+    font-size:medium;
+    cursor: pointer;
+    border-radius: 20px;
  }
+
+
+ .Entrar:hover{
+    transition: 0.3s all;
+    color: #1c547e;
+ }
+ 
  
  
  input {
