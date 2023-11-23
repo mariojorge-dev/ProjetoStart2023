@@ -111,7 +111,7 @@ h1 {
 .container {
     justify-content: center;
     max-width: 1500px;
-    height: 55vh;
+    height: 600px;
     display: flex;
 }
 
@@ -131,10 +131,13 @@ h1 {
 }
 
 .form {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
     align-items: center; 
     background-color: #DDE6ED;
     padding: 1rem;
+    margin-top: 1rem;
 } 
 
 
