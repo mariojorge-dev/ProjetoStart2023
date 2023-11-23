@@ -111,7 +111,7 @@ h1 {
 .container {
     justify-content: center;
     max-width: 1500px;
-    height: 600px;
+    height: 80vh;
     display: flex;
 }
 
@@ -131,13 +131,10 @@ h1 {
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
     align-items: center; 
     background-color: #DDE6ED;
     padding: 1rem;
-    margin-top: 1rem;
+    margin-top: 50px;
 } 
 
 
@@ -156,10 +153,11 @@ h1 {
     gap: 100px;
     row-gap: 5px;
     padding: 0.2rem 0;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .input-box {
+
     display: flex;
     align-items: baseline;
     flex-direction: column;
@@ -188,9 +186,8 @@ h1 {
 }
 
 .input-box label,
-.gender-title {
-
-    font-size: 15;
+.gender-title h6 {
+    font-size: 0.8rem;
     font-weight: 600;
     color: #0a0a0ac0;
 }
@@ -201,16 +198,16 @@ h1 {
 }
 
 .gender-group {
-
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
     margin-top: 0.62rem;
+    padding: 0 .5rem;
 }
 
 .gender-input {
     display: flex;
     align-items: center;
-    margin-top: 5px;
+
 }
 
 .gender-input input {
@@ -236,7 +233,7 @@ h1 {
 }
 
 .continue-button button:hover {
-    background-color: #1664d1;
+    background-color: #27374D;
 }
 
 .continue-button button a {
@@ -292,19 +289,19 @@ h1 {
     }
 }
 
-/* Estilos gerais */
 
-/* Estilos para telas menores (ex: smartphones) */
+
+
 @media only screen and (max-width: 600px) {
-    /* Adicione estilos específicos para telas menores aqui */
+    
 }
 
-/* Estilos para telas médias (ex: tablets) */
+
 @media only screen and (min-width: 601px) and (max-width: 2560px )  {
-    /* Adicione estilos específicos para telas médias aqui */
+    
 }
 
-/* Estilos para telas maiores (ex: desktops) */
+
 @media only screen and (min-width: 1025px) {
-    /* Adicione estilos específicos para telas maiores aqui */
+ 
 }
