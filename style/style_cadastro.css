@@ -1,12 +1,17 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    min-height: 100vh; 
     font-family: poppinsregular;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(27, 29, 31);
    
 }
-
-
 
 header {
 
@@ -70,7 +75,7 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     color: #FFF;
-    left: 87.7%;
+    right: 99px;
     transform: translateX(0%);
     margin-top: 6px;
 
@@ -104,10 +109,10 @@ h1 {
 }
 
 .container {
+    justify-content: center;
     max-width: 1500px;
     height: 80vh;
     display: flex;
-
 }
 
 .form-image {
@@ -126,15 +131,14 @@ h1 {
 }
 
 .form {
-    /*align-items: center; */
+    align-items: center; 
     background-color: #DDE6ED;
     padding: 1rem;
-    margin-top: 1%;
-}
+    margin-top: 50px;
+} 
 
 
 .form-header {
-
     margin-bottom: 0rem;
     display: flex;
     justify-content: space-between;
@@ -142,14 +146,14 @@ h1 {
 
 
 .input-group {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 100px;
+    row-gap: 5px;
     padding: 0.2rem 0;
-    margin-top: -3%;
-
-
-
+    margin-top: 50px;
 }
 
 .input-box {
@@ -158,8 +162,6 @@ h1 {
     align-items: baseline;
     flex-direction: column;
     margin: 0.4rem 0rem;
-    
-
 
 }
 
