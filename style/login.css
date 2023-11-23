@@ -35,20 +35,21 @@ h1 {
 
 
  .Entrar {
-   height: 40px;
+    height: 40px;
     width: 60%;
     align-items: center;
-    background-color: #9DB2BF;
+    background-color: #1489d1;
     color: black;
     font-size:medium;
     cursor: pointer;
     border-radius: 20px;
+    border: none;
  }
 
 
  .Entrar:hover{
     transition: 0.5s all;
-    background-color: #1489d1;
+    background-color: #FF914D;
     color: white;
  }
  

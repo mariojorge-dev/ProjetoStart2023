@@ -1,6 +1,6 @@
 body {
-    font-family: poppinsregular;
     justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
     align-items: center;
     background-color: rgb(27, 29, 31);
     margin: 0px 0px 50px 0px;
@@ -182,7 +182,6 @@ h2{
 
 .conhecimento-text p {
     font-size: larger;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     margin: 15px;
     text-align: justify;
