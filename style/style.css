@@ -6,6 +6,7 @@ body {
    height: 100vh;
  }
 
+
 header {
    display: flex;
    flex-direction: row;
@@ -15,6 +16,7 @@ header {
    padding-top: 50px;
    border-bottom: 2px solid white;
 }
+
 header ul {
    display: flex;
    width: 600px;
@@ -116,15 +118,6 @@ h1 {
 
 }
 
-h2 {
-   font-size: 36px;
-   font-family: poppinsmedium;
-   color: #fff;
-}
-
-span {
-   color: #fff;
-}
 
 p {
    line-height: 20px;
