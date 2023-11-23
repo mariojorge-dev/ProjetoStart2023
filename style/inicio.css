@@ -1,9 +1,15 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    min-height: 100vh;
     font-family: poppinsregular;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-
 }
 
 
@@ -25,7 +31,6 @@ body::before {
     background-position: center; 
     background-attachment: fixed;
     
-
 }
 
 

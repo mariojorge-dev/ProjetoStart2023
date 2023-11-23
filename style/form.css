@@ -1,14 +1,11 @@
 body {
     font-family: poppinsregular;
-    justify-content: space-between;
-    align-items: center;
     background-color: rgb(27, 29, 31);
    
 }
 
 
 header {
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -69,7 +66,7 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     color: #FFF;
-    left: 86.5%;
+    right: 95px;
     transform: translateX(0%);
     margin-top: 6px;
 
