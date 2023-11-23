@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const Isexoemp = document.querySelector(".sexoemp");
 
     function cadastrar() {
-        fetch("http://localhost:8080/empreendedores", {
+        fetch("http://localhost:8080/empreendedor", {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
