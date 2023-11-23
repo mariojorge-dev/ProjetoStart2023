@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const Isexoemp = document.querySelector(".sexoemp");
 
     function cadastrar() {
-        fetch("http://localhost:8080/usuarios", {
+        fetch("http://localhost:8080/empreendedores", {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
@@ -129,3 +129,28 @@ document.addEventListener('DOMContentLoaded', function () {
         // ... Outros scripts ou funções que você possa ter ...
     });
 });
+
+function obterClasseDoSexoSelecionado() {
+    // Obtém todos os elementos com a classe 'sexoemp'
+    var botoesRadio = document.getElementsByClassName('sexoemp');
+
+    // Itera sobre os botões de rádio para encontrar o selecionado
+    for (var i = 0; i < botoesRadio.length; i++) {
+        if (botoesRadio[i].checked) {
+            // Retorna a classe do botão de rádio selecionado
+            return botoesRadio[i].classList[1]; // Assume que a classe desejada é a segunda na lista de classes
+        }
+    }
+
+    // Retorna null se nenhum botão de rádio estiver selecionado
+    return null;
+}
+
+// Exemplo de uso
+var classeSelecionada = obterClasseDoSexoSelecionado();
+if (classeSelecionada !== null) {
+    console.log('Classe do sexo selecionado:', classeSelecionada);
+} else {
+    console.log('Nenhum sexo selecionado');
+}
+
