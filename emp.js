@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const formularioemp = document.querySelector("formemp");
+    const formularioemp = document.querySelector(".formemp");
     const Inomeemp = document.querySelector(".nomeemp");
     const Icnpjemp = document.querySelector(".cnpjemp");
     const Idatanemp = document.querySelector(".datanemp");
