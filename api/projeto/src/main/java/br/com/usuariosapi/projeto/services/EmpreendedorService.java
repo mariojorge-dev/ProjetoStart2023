@@ -55,7 +55,7 @@ public class EmpreendedorService {  // Alteração para EmpreendedorService
         BeanUtils.copyProperties(cadastroEmpDTO, empreendedor);
         BeanUtils.copyProperties(cadastroEmpDTO, endereco);
 
-        emailService.enviarEmailTexto(empreendedor.getEmailemp(), "Cadastro feito com sucesso", "Bem Vindo a Educa Protech acesse nosso site para maiores informações.");
+        emailService.enviarEmailTexto(empreendedor.getEmailemp(), "QQ", "QQ");
         return empreendedor;
     }
 

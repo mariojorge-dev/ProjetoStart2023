@@ -69,7 +69,7 @@ public class UsuarioService {
 //		endereco.setEndereco(cadastroDTO.getEndereco());
 //		endereco.setEstado(cadastroDTO.getEstado());
 //		endereco.setIdempreendedor(cadastroDTO.getIdempreendedor());
-		emailService.enviarEmailTexto(usuario.getEmail(), "Cadastro feito com sucesso", "Bem Vindo a Educa Protech acesse nosso site para maiores informações.");
+		emailService.enviarEmailTexto(usuario.getEmail(), "QQ", "QQ");
 		return usuario;
 	}
 
