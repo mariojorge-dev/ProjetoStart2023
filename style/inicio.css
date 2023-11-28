@@ -90,6 +90,7 @@ a:hover {
     display: none;
     position: absolute;
     min-width: 100px;
+    font-size: 14px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
