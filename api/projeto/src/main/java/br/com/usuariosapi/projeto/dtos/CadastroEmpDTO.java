@@ -33,7 +33,13 @@ public class CadastroEmpDTO {
     
     private String idusuario;
  
-   
+    public Integer getIdempreemdedor() {
+		return idempreendedor;
+	}
+
+	public void setIdempreemdedor(Integer idempreendedor) {
+		this.idempreendedor = idempreendedor;
+	}
 
 	public String getNomeemp() {
 		return nomeemp;
