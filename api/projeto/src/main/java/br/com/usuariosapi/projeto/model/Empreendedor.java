@@ -107,11 +107,11 @@ public class Empreendedor implements Serializable {
 	}
 
 	public String getDatanemp() {
-		return senhaemp;
+		return datanemp;
 	}
-
-	public void setDatanemp(String senhaemp) {
-		this.senhaemp = senhaemp;
+	
+	public void setDatanemp(String datanemp) {
+		this.datanemp = datanemp;
 	}
 
 	public Endereco getEndereco() {
