@@ -7,23 +7,33 @@ public class EmpreendedorDTO {
     private String cnpjemp;
     private String contatoemp;
     private String emailemp;
-    private String senhaemp;
+	private String datanemp;
+	private String senhaemp;
 	private EnderecoDTO endereco;
 
-    public EmpreendedorDTO(Integer idempreendedor, String nomeemp, String cnpjemp, String contatoemp, String emailemp, String senhaemp, EnderecoDTO endereco) {
+    public EmpreendedorDTO(Integer idempreendedor, String nomeemp, String cnpjemp, String contatoemp, String emailemp, String senhaemp, String datanemp,  EnderecoDTO endereco) {
         super();
         this.idempreendedor = idempreendedor;
         this.nomeemp = nomeemp;
         this.cnpjemp = cnpjemp;
         this.contatoemp = contatoemp;
         this.emailemp = emailemp;
-        this.senhaemp = senhaemp;
+		this.datanemp = datanemp;
+		this.senhaemp = senhaemp;
 		this.endereco = endereco;
     }
 
     public EmpreendedorDTO() {
         super();
     }
+
+	    public String getDatanemp() {
+		return datanemp;
+	}
+
+	public void setDatanemp(String datanemp) {
+		this.datanemp = datanemp;
+	}
 
 	public Integer getIdempreendedor() {
 		return idempreendedor;

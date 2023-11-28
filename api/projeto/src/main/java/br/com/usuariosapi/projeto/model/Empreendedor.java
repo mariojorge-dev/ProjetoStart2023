@@ -42,6 +42,9 @@ public class Empreendedor implements Serializable {
 	@Column(name = "cnpjemp", length = 20, nullable = true)
 	private String cnpjemp;
 
+	@Column(name = "datanemp", length = 15, nullable = true)
+	private String datanemp;
+
 	@Column(name = "contatoemp", length = 15, nullable = true)
 	private String contatoemp;
 
@@ -100,6 +103,14 @@ public class Empreendedor implements Serializable {
 	}
 
 	public void setSenhaemp(String senhaemp) {
+		this.senhaemp = senhaemp;
+	}
+
+	public String getDatanemp() {
+		return senhaemp;
+	}
+
+	public void setDatanemp(String senhaemp) {
 		this.senhaemp = senhaemp;
 	}
 

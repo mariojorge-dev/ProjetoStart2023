@@ -8,29 +8,17 @@ public class CadastroEmpDTO {
 	
 	@NotNull
 	private String nomeemp;
-
 	private String cnpjemp;
-
 	private String contatoemp;
-	
 	private String emailemp;
-
-	private String datanascimentoemp;
-
+	private String datanemp;
 	private String senhaemp;
-	
     private Integer idendereco;
-	
     private String cep;
-
     private String cidade;
-    
     private String municipio;
-
     private String estado;
-    
     private String endereco;
-    
     private String idusuario;
  
     public Integer getIdempreemdedor() {
@@ -73,12 +61,12 @@ public class CadastroEmpDTO {
 		this.emailemp = emailemp;
 	}
 
-	public String getDatanascimentoemp() {
-		return datanascimentoemp;
+	public String getDatanemp() {
+		return datanemp;
 	}
 
-	public void setDatanascimentoemp(String datanascimentoemp) {
-		this.datanascimentoemp = datanascimentoemp;
+	public void setDatanemp(String datanemp) {
+		this.datanemp = datanemp;
 	}
 
 	public String getSenhaemp() {
