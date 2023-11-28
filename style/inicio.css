@@ -12,7 +12,6 @@ body {
     z-index: 1;
 }
 
-
 body::before {
     content: "";
     position: fixed;
@@ -26,13 +25,12 @@ body::before {
 
 .background-image-fixed {
      
-    background-image: url("/components/images/alunos.jpg");
+    background-image: url("/imagens/Blue\ Minimalist\ Linktree\ Background.png");
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed;
     
 }
-
 
 header {
 
@@ -62,12 +60,12 @@ li {
 }
 
 a {
-    color: #38B6FF;
+    color: white;
     text-decoration: none;
+    font-size: larger;
 }
 
 a:hover {
-    color: #FF914D;
     transition: 40ms all;
     border-bottom: 3px solid rgba(227, 231, 8, 0.897);
 }
@@ -75,10 +73,10 @@ a:hover {
 /* Estilo do botão */
 .dropdown-btn {
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
-    border: 2px solid #FF914D;
+    border: 2px solid white;
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
@@ -96,7 +94,7 @@ a:hover {
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    color: #FFF;
+    color: white;
     right: 110px;
     transform: translateX(0%);
     margin-top: 6px;
@@ -130,6 +128,11 @@ h1 {
     font-weight: 200;
 }
 
+h3{
+    font-size: larger;
+    color: #DDE6ED;
+}
+
 
 .slide {
     display: none;
@@ -143,6 +146,11 @@ h1 {
     border-radius: 10px;
     
 }
+
+#imgSlide{
+    width: 1000px;
+}
+
 form {
    display: flex;
    flex-direction: column;
@@ -208,15 +216,15 @@ main {
  
  
 
-.subtitulo-algo {
-
+.subtitulo {
     color: #FFf;
     padding: 20px;
     text-align: center;
+    margin-top: 70px;
 }
 
-.algo-container {
 
+.algo-container {
     text-align: center;
     color: #FFFFFF;
     padding: 20px;
@@ -238,22 +246,7 @@ main {
     width: 50%;
     height: auto;
     border-radius: 60px;
-}
-
-.box p {
-    width: 250px;
-    height: 60px;
-    margin: 5px;
-    background: #FF914D;
-    font-size: 20px;
-    color: white;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
-    display: flex;
-    display:inline-flex;
-    align-items: center;
-    justify-items: center;
+    box-shadow: 10px 10px 10px black;
 }
 
 

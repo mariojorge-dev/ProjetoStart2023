@@ -32,4 +32,4 @@ function autoSlide() {
 showSlide(currentSlide);
 
 // Ativa o slide automático a cada 5 segundos
-setInterval(autoSlide, 2000);
+setInterval(autoSlide, 6000);

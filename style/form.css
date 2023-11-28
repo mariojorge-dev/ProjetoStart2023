@@ -10,6 +10,25 @@ body {
    
 }
 
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Ajuste o último valor (0.5) para controlar a opacidade do overlay */
+    z-index: -1; /* Coloca o overlay atrás do conteúdo da página */
+}
+
+.background-image-fixed {
+     
+    background-image: url("/imagens/Blue\ Minimalist\ Linktree\ Background.png");
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    
+}
 
 header {
     display: flex;
@@ -37,12 +56,12 @@ li {
 }
 
 a {
-    color: #38B6FF;
+    color: #ffffff;
     text-decoration: none;
+    font-size: larger;
 }
 
 a:hover {
-    color: #FF914D;
     transition: 40ms all;
     border-bottom: 3px solid rgba(227, 231, 8, 0.897);
 }
@@ -50,10 +69,10 @@ a:hover {
 /* Estilo do botão */
 .dropdown-btn {
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
-    border: 2px solid #FF914D;
+    border: 2px solid #ffffff;
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
