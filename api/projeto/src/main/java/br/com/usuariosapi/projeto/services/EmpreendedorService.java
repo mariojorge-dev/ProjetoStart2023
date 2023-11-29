@@ -55,7 +55,7 @@ public class EmpreendedorService {  // Alteração para EmpreendedorService
         BeanUtils.copyProperties(cadastroEmpDTO, empreendedor);
         BeanUtils.copyProperties(cadastroEmpDTO, endereco);
 
-        emailService.enviarEmailTexto(empreendedor.getEmailemp(), "QQ", "QQ");
+        emailService.enviarEmailTexto(empreendedor.getEmail(), "QQ", "QQ");
         return empreendedor;
     }
 

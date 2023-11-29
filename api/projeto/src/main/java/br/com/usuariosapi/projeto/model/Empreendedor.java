@@ -33,23 +33,23 @@ public class Empreendedor implements Serializable {
 	@Column(name = "idempreendedor")
 	private Integer idempreendedor;
 
-	@Column(name = "nomeemp", length = 200, nullable = true)
-	private String nomeemp;
+	@Column(name = "nome", length = 200, nullable = true)
+	private String nome;
 
-	@Column(name = "emailemp", length = 200, nullable = true)
-	private String emailemp;
+	@Column(name = "email", length = 200, nullable = true)
+	private String email;
 
-	@Column(name = "cnpjemp", length = 20, nullable = true)
-	private String cnpjemp;
+	@Column(name = "cnpj", length = 20, nullable = true)
+	private String cnpj;
 
-	@Column(name = "datanemp", length = 15, nullable = true)
-	private String datanemp;
+	@Column(name = "datan", length = 15, nullable = true)
+	private String datan;
 
-	@Column(name = "contatoemp", length = 15, nullable = true)
-	private String contatoemp;
+	@Column(name = "contato", length = 15, nullable = true)
+	private String contato;
 
-	@Column(name = "senhaemp", columnDefinition = "TEXT", nullable = true)
-	private String senhaemp;
+	@Column(name = "senha", columnDefinition = "TEXT", nullable = true)
+	private String senha;
 
 	@OneToOne(mappedBy = "empreendedor", cascade = CascadeType.ALL)
 	private Endereco endereco;
@@ -66,52 +66,52 @@ public class Empreendedor implements Serializable {
 		this.idempreendedor = idempreendedor;
 	}
 
-	public String getNomeemp() {
-		return nomeemp;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setNomeemp(String nomeemp) {
-		this.nomeemp = nomeemp;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
-	public String getEmailemp() {
-		return emailemp;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setEmailemp(String emailemp) {
-		this.emailemp = emailemp;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
-	public String getCnpjemp() {
-		return cnpjemp;
+	public String getCnpj() {
+		return cnpj;
 	}
 
-	public void setCnpjemp(String cnpjemp) {
-		this.cnpjemp = cnpjemp;
+	public void setCnpjemp(String cnpj) {
+		this.cnpj = cnpj;
 	}
 
-	public String getContatoemp() {
-		return contatoemp;
+	public String getContato() {
+		return contato;
 	}
 
-	public void setContatoemp(String contatoemp) {
-		this.contatoemp = contatoemp;
+	public void setContato(String contato) {
+		this.contato = contato;
 	}
 
-	public String getSenhaemp() {
-		return senhaemp;
+	public String getSenha() {
+		return senha;
 	}
 
-	public void setSenhaemp(String senhaemp) {
-		this.senhaemp = senhaemp;
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
 
-	public String getDatanemp() {
-		return datanemp;
+	public String getDatan() {
+		return datan;
 	}
 	
-	public void setDatanemp(String datanemp) {
-		this.datanemp = datanemp;
+	public void setDatan(String datan) {
+		this.datan = datan;
 	}
 
 	public Endereco getEndereco() {

@@ -7,74 +7,73 @@ public class CadastroEmpDTO {
 	
 	
 	@NotNull
-	private String nomeemp;
-	private String cnpjemp;
-	private String contatoemp;
-	private String emailemp;
-	private String datanemp;
-	private String senhaemp;
+	private String nome;
+	private String cnpj;
+	private String contato;
+	private String email;
+	private String datan;
+	private String senha;
     private Integer idendereco;
     private String cep;
     private String cidade;
     private String municipio;
     private String estado;
     private String endereco;
-    private String idusuario;
  
-    public Integer getIdempreemdedor() {
-		return idempreendedor;
+	public Integer getIdempreendedor() {
+	return idempreendedor;
 	}
 
-	public void setIdempreemdedor(Integer idempreendedor) {
+	public void getIdempreendedor(Integer idempreendedor) {
 		this.idempreendedor = idempreendedor;
 	}
 
-	public String getNomeemp() {
-		return nomeemp;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setNomeemp(String nomeemp) {
-		this.nomeemp = nomeemp;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
-	public String getCnpjemp() {
-		return cnpjemp;
+	public String getCnpj() {
+		return cnpj;
 	}
 
-	public void setCnpjemp(String cnpjemp) {
-		this.cnpjemp = cnpjemp;
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
 	}
 
-	public String getContatoemp() {
-		return contatoemp;
+	public String getContato() {
+		return contato;
 	}
 
-	public void setContatoemp(String contatoemp) {
-		this.contatoemp = contatoemp;
+	public void setContato(String contato) {
+		this.contato = contato;
 	}
 
-	public String getEmailemp() {
-		return emailemp;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setEmailemp(String emailemp) {
-		this.emailemp = emailemp;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
-	public String getDatanemp() {
-		return datanemp;
+	public String getDatan() {
+		return datan;
 	}
 
-	public void setDatanemp(String datanemp) {
-		this.datanemp = datanemp;
+	public void setDatan(String datan) {
+		this.datan = datan;
 	}
 
-	public String getSenhaemp() {
-		return senhaemp;
+	public String getSenha() {
+		return senha;
 	}
 
-	public void setSenhaemp(String senhaemp) {
-		this.senhaemp = senhaemp;
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
 
 	public Integer getIdendereco() {
@@ -124,22 +123,4 @@ public class CadastroEmpDTO {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-
-	public Integer getIdempreendedor() {
-		return idempreendedor;
-	}
-
-	public void setIdempreendedor(Integer idempreendedor) {
-		this.idempreendedor = idempreendedor;
-	}
-
-	public String getIdusuario() {
-		return idusuario;
-	}
-
-	public void setIdusuario(String idusuario) {
-		this.idusuario = idusuario;
-	}
-	
-
 }

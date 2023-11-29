@@ -8,32 +8,18 @@ public class CadastroDTO {
 	
 	@NotNull
 	private String nome;
-
 	private String cpf;
-
 	private String contato;
-	
 	private String email;
-
 	private String datanascimento;
-
 	private String sexo;
-
 	private String senha;
-	
     private Integer idendereco;
-	
     private String cep;
-
     private String cidade;
-    
     private String municipio;
-
     private String estado;
-    
     private String endereco;
-    
-    private Integer idempreendedor;
 
 	public Integer getIdusuario() {
 		return idusuario;
@@ -137,14 +123,6 @@ public class CadastroDTO {
 
 	public void setEstado(String estado) {
 		this.estado = estado;
-	}
-
-	public Integer getIdempreendedor() {
-		return idempreendedor;
-	}
-
-	public void setIdempreendedor(Integer idempreendedor) {
-		this.idempreendedor = idempreendedor;
 	}
 
 	public String getEndereco() {

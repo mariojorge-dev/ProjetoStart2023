@@ -3,23 +3,23 @@ package br.com.usuariosapi.projeto.dtos;
 public class EmpreendedorDTO {
 
     private Integer idempreendedor;
-    private String nomeemp;
-    private String cnpjemp;
-    private String contatoemp;
-    private String emailemp;
-	private String datanemp;
-	private String senhaemp;
+    private String nome;
+    private String cnpj;
+    private String contato;
+    private String email;
+	private String datan;
+	private String senha;
 	private EnderecoDTO endereco;
 
-    public EmpreendedorDTO(Integer idempreendedor, String nomeemp, String cnpjemp, String contatoemp, String emailemp, String senhaemp, String datanemp,  EnderecoDTO endereco) {
+    public EmpreendedorDTO(Integer idempreendedor, String nome, String cnpj, String contato, String email, String senha, String datan,  EnderecoDTO endereco) {
         super();
         this.idempreendedor = idempreendedor;
-        this.nomeemp = nomeemp;
-        this.cnpjemp = cnpjemp;
-        this.contatoemp = contatoemp;
-        this.emailemp = emailemp;
-		this.datanemp = datanemp;
-		this.senhaemp = senhaemp;
+        this.nome = nome;
+        this.cnpj = cnpj;
+        this.contato = contato;
+        this.email = email;
+		this.datan = datan;
+		this.senha = senha;
 		this.endereco = endereco;
     }
 
@@ -27,12 +27,12 @@ public class EmpreendedorDTO {
         super();
     }
 
-	    public String getDatanemp() {
-		return datanemp;
+	    public String getDatan() {
+		return datan;
 	}
 
-	public void setDatanemp(String datanemp) {
-		this.datanemp = datanemp;
+	public void setDatan(String datan) {
+		this.datan = datan;
 	}
 
 	public Integer getIdempreendedor() {
@@ -43,44 +43,44 @@ public class EmpreendedorDTO {
 		this.idempreendedor = idempreendedor;
 	}
 
-	public String getNomeemp() {
-		return nomeemp;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setNomeemp(String nomeemp) {
-		this.nomeemp = nomeemp;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
-	public String getCnpjemp() {
-		return cnpjemp;
+	public String getCnpj() {
+		return cnpj;
 	}
 
-	public void setCnpjemp(String cnpjemp) {
-		this.cnpjemp = cnpjemp;
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
 	}
 
-	public String getContatoemp() {
-		return contatoemp;
+	public String getContato() {
+		return contato;
 	}
 
-	public void setContatoemp(String contatoemp) {
-		this.contatoemp = contatoemp;
+	public void setContato(String contato) {
+		this.contato = contato;
 	}
 
-	public String getEmailemp() {
-		return emailemp;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setEmailemp(String emailemp) {
-		this.emailemp = emailemp;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
-	public String getSenhaemp() {
-		return senhaemp;
+	public String getSenha() {
+		return senha;
 	}
 
-	public void setSenhaemp(String senhaemp) {
-		this.senhaemp = senhaemp;
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
 
 	public EnderecoDTO getEndereco() {
