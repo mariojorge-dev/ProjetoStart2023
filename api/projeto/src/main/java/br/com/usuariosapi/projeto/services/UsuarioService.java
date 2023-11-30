@@ -27,8 +27,7 @@ public class UsuarioService {
 	}
 
 	public Usuario editarUsuario(Usuario usuario) {
-		Usuario usuarioNovo = iUsuario.save(usuario);
-		return usuarioNovo;
+        return iUsuario.save(usuario);
 	}
 
 	public Optional<Usuario> excluirUsuario(Integer idusuario) {
@@ -78,4 +77,8 @@ public class UsuarioService {
 	public Usuario buscarPorId(Integer id) {
 		return iUsuario.findById(id).orElseThrow(() -> new RuntimeException("Usuario Não Encontrado"));
 	}
+
+    public static boolean autenticar(String email, String senha) {
+        return false;
+    }
 }
