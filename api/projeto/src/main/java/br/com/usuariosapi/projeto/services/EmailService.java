@@ -20,7 +20,7 @@ public class EmailService{
 		simpleMailMessage.setSubject(tit);
 		simpleMailMessage.setText(msg);
 		javaMailSender.send(simpleMailMessage);
-		return "Erro ao enviar o email.";
+		return "Email enviado com sucesso.";
 		}catch (Exception ex) {
 			return "Erro ao enviar o email.";
 		}
