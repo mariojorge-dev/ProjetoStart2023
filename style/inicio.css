@@ -1,4 +1,4 @@
-* { 
+/* * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,8 +19,8 @@ body::before {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5); /* Ajuste o último valor (0.5) para controlar a opacidade do overlay */
-    z-index: -1; /* Coloca o overlay atrás do conteúdo da página */
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
 }
 
 .background-image-fixed {
@@ -70,7 +70,7 @@ a:hover {
     border-bottom: 3px solid rgba(227, 231, 8, 0.897);
 }
 
-/* Estilo do botão */
+
 .dropdown-btn {
     display: inline-block;
     font-size: 20px;
@@ -85,7 +85,6 @@ a:hover {
 
 }
 
-/* Estilo do conteúdo do menu (inicialmente oculto) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -103,7 +102,6 @@ a:hover {
 
 }
 
-/* Estilo dos itens do menu */
 .dropdown-content a {
     padding: 12px 16px;
     display: block;
@@ -113,16 +111,16 @@ a:hover {
     border-radius: 15px;
 }
 
-/* Mudar a cor do item do menu ao passar o mouse sobre ele */
+
 .dropdown-content a:hover {
     color: #FF914D;
     background-color: #526D82;
 }
 
-/* Mostrar o menu quando o botão é clicado */
+
 .dropdown-btn:hover .dropdown-content {
     display: block;
-}
+} */
 
 
 h1 {
