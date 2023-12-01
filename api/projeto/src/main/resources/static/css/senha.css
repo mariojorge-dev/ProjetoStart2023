@@ -1,0 +1,72 @@
+
+h1 {
+    font-size: 36px;
+    font-family: poppinsmedium;
+    color: #fff;
+    justify-self: center;
+ 
+  }
+  
+  h2 {
+     font-size: 20px;
+     font-family: poppinsmedium;
+     color: #fff;
+     justify-self: center;
+  }
+  
+ 
+ 
+  form {
+   
+     display: flex;
+     flex-direction: column;
+    
+     
+     
+  }
+  
+  form [type="submit"] {
+     height: 50px;
+     width: 10px;
+     background-color: #526D82;
+     color: #DDE6ED;
+     font-size:medium;
+     align-items: inline block;
+     margin-top: 10px;
+  }
+ 
+  
+  form [type="submit"]:hover {
+     cursor: pointer;
+     transition: 0.3s all;
+     color: orange;
+ 
+  }
+  
+  
+  input {
+     height: 20px;
+     padding: 15px;
+     border-radius: 20px;
+     border: none;
+     font-size: 15px;
+     min-width: 100px;
+     
+  }
+  
+  aside {
+     min-width: 300px;
+     min-height: 300px;
+     align-items: center;
+     margin-top: 150px;
+     
+  }
+  
+  main {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     height: 75%;
+     margin: 0 20px;
+  }
+ 

@@ -16,21 +16,47 @@ public class LoginController {
 @Autowired
 private IUsuario usu;
 
-    @GetMapping("/")
-    public String index() {
-        return "index";
+    @GetMapping("/index.html")
+    public String mostrarPaginaInicio() {
+        return "index"; // Retorna o nome do arquivo HTML para a página inicial
+    }
+
+    @GetMapping("/cursos.html")
+    public String mostrarPaginaCursos() {
+        return "cursos"; // Retorna o nome do arquivo HTML para a página de cursos
+    }
+
+    @GetMapping("/tela_sobreNos.html")
+    public String mostrarPaginaSobreNos() {
+        return "tela_sobreNos"; // Retorna o nome do arquivo HTML para a página sobre nós
+    }
+
+    @GetMapping("/form.html")
+    public String mostrarPaginaFormulario() {
+        return "form"; // Retorna o nome do arquivo HTML para a página de formulário
+    }
+
+    @GetMapping("/cadastrogeral.html")
+    public String mostrarPaginaCadastroGeral() {
+        return "cadastrogeral"; // Retorna o nome do arquivo HTML para a página de cadastro geral
+    }
+
+    @GetMapping("/cadastroempreendedor.html")
+    public String mostrarPaginaCadastroEmpreendedor() {
+        return "cadastroempreendedor"; // Retorna o nome do arquivo HTML para a página de cadastro de empreendedor
     }
 
     @PostMapping("/logar")
     public String logar(Model model, @RequestParam String email, @RequestParam String senha) {
         // Verifica as credenciais usando o serviço de usuário
         if (autenticar(email, senha)) {
-            // Se a autenticação for bem-sucedida, redireciona para a página de dashboard
-            return "redirect:/dashboard";
+            // Se a autenticação for bem-sucedida, redireciona para a página inicial
+            return "redirect:/";
         } else {
             // Se a autenticação falhar, exibe uma mensagem de erro
             model.addAttribute("error", "Credenciais inválidas");
-            return "login/index";
+            return "login/index"; // Verifique se o caminho está correto
         }
     }
-}
+    }
+

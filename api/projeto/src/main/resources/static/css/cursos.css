@@ -1,0 +1,365 @@
+/** { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    font-family: poppinsregular;
+    background-color: rgb(27, 29, 31);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+}
+
+.background-image-fixed {
+     
+    background-image: url("/imagens/Blue\ Minimalist\ Linktree\ Background.png");
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    
+}
+
+header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+header ul {
+    margin-left: 30%;
+}
+
+.logo {
+    margin-left: 10%;
+}
+
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: larger;
+}
+
+a:hover {
+    
+    transition: 40ms all;
+    border-bottom: 3px solid rgba(227, 231, 8, 0.897);
+}
+
+.dropdown-btn {
+    display: inline-block;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    color: #FF914D;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    font-size: 14px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color: #FFF;
+    right: 99px;
+    transform: translateX(0%);
+    margin-top: 6px;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    color: #38B6FF;
+    transition: 0.5s all;
+    border-radius: 15px;
+}
+
+
+.dropdown-content a:hover {
+    color: #FF914D;
+    background-color: #526D82;
+}
+
+
+.dropdown-btn:hover .dropdown-content {
+    display: block;
+}
+*/
+
+h1 {
+    font-weight: 200;
+}
+
+.sessao-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sessao-header h1 {
+    font-size: 30px;
+    color: #FFF;
+    border-bottom: solid 3px rgba(227, 231, 8, 0.897);
+    margin-bottom: 50px;
+}
+
+
+.sessao-projetos {
+    margin-bottom: 40px;
+    padding-bottom: 50px;
+}
+
+.projetos {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.card {
+    width: 450px;
+    height: 350px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.card:hover .card-img-wrapper img {
+    opacity: 0.5;
+}
+
+.card-info {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0px;
+    padding: 36px;
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
+    transition: all 0.3s;
+}
+
+.card-info h3 {
+    font-weight: 500;
+    color: #FFF;
+    margin-bottom: 0px;
+    font-size: 22px;
+}
+
+.card-info p {
+    color: #FFF;
+    width: 80%;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.btn {
+    background: #9DB2BF;
+    font-size: 14px;
+    color: #eee;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.card-info button {
+    width: 8rem;
+    height: 2.5rem;
+}
+
+.card:hover .card-info {
+    bottom: 15px;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* fim cursos */
+
+
+/* mobile */
+
+
+@media screen and (max-width: 1200px) {
+    .sessao-header {
+        margin-bottom: 3rem;
+    }
+
+    .conhecimentos {
+        height: 42rem;
+        background-color: #f5f5f5;
+    }
+
+    .conhecimento {
+        font-size: 0.9rem;
+    }
+
+    .card {
+        width: 15rem;
+        height: 22rem;
+    }
+
+    .card-info h2 {
+        font-size: 1.7rem;
+    }
+
+    .card-info h3 {
+        font-size: 1rem;
+    }
+
+    .card-info p {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media screen and (max-width: 770px) {
+
+    .card {
+        width: 12rem;
+        height: 19rem;
+    }
+
+    .card-info {
+        left: 1rem;
+        padding: 0.2rem;
+    }
+
+    .card-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-info h3 {
+        font-size: 0.8rem;
+    }
+
+    .card-info button {
+        width: 5rem;
+        height: 1.6rem;
+        font-size: 0.7rem;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .sessao-header h1 {
+        font-size: 2rem;
+    }
+
+    .conhecimento-header i {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .conhecimento-header h3 {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+
+    .conhecimento-text p {
+        font-size: 0.6rem;
+    }
+
+    .card {
+        width: 8rem;
+        height: 16rem;
+    }
+
+    .card-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .card-info {
+        font-size: 0.6rem;
+    }
+
+    .card-info p {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .sessao-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .conhecimento-header h3 {
+        font-size: 0.8rem;
+    }
+
+    .conhecimento-header i {
+        font-size: 0.8rem;
+    }
+
+    .conhecimento-text p {
+        font-size: 0.6rem;
+    }
+
+    .card-1 {
+        left: 35px;
+    }
+
+    .card-2 {
+        left: 90px;
+    }
+
+    .card-3 {
+        visibility: hidden;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .card-info h2 {
+        font-size: 1rem;
+    }
+
+    .card-2 {
+        left: 80px;
+    }
+}
