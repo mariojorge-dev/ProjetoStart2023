@@ -1,46 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="bt-br" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/cursos.css">
-    <link rel="stylesheet" href="style/fonts.css">
-    <link rel="stylesheet" href="style/headerMenu.css">
-    <link rel="icon" href="Img/favicon.ico">
+    <link rel="stylesheet" th:href="@{css/cursos.css}">
+    <link rel="stylesheet" th:href="@{css/fonts.css}">
+    <link rel="stylesheet" th:href="@{css/headerMenu.css}">
+    <link rel="shortcut icon" href="Img/favicon.ico" type="image/x-icon">// Img/favicon.ico
     <title>Cursos</title>
 </head>
 
 <body class="background-image-fixed">
 
-    <header>
-        <div class="logo">
-            <img src="Img/logopequena.png" alt="">
+<header>
+    <div class="logo">
+        <img th:src="@{Img/logopequena.png}" alt="">
 
-        </div>
-        <ul>
-            <a href="index.html">
-                <li>Inicio</li>
-            </a>
-            <a href="cursos.html">
-                <li>Cursos</li>
-            </a>
-            <a href="tela_sobreNos.html">
-                <li>Sobre</li>
-            </a>
-            <a href="form.html">
-                <li>Seja Voluntário</li>
-            </a>
+    </div>
+    <ul>
 
-            <div class="dropdown-btn">Cadastre-se
-                <div class="dropdown-content">
-                    <a href="cadastrogeral.html">Usuario</a>
-                    <a href="cadastroempreendedor.html">Empreendedor</a>
-                </div>
+        <li><a th:href="@{/index.html}">Início</a></li>
+        <li><a th:href="@{/cursos.html}">Cursos</a></li>
+        <li><a th:href="@{/tela_sobreNos.html}">Sobre</a></li>
+        <li><a th:href="@{/form.html}">Seja Voluntário</a></li>
+
+        <div class="dropdown-btn">Cadastre-se
+            <div class="dropdown-content">
+                <a th:href="@{/cadastrogeral.html}">Usuario</a>
+                <a th:href="@{/cadastroempreendedor.html}">Empreendedor</a>
             </div>
+        </div>
 
-        </ul>
-    </header>
+    </ul>
+
+</header>
 
     <!-- cursos -->
     <section class="sessao-projetos" id="projetos">
