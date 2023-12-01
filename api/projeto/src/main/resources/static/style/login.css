@@ -1,0 +1,43 @@
+h1 {
+    font-weight: 200;
+   
+ }
+ 
+ h2 {
+    font-size: 36px;
+    font-family: poppinsmedium;
+    color: #fff;
+ }
+ 
+ span {
+    color: #fff;
+ }
+ 
+ 
+ p {
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+    color: #fff;
+    margin: 0;
+ 
+ }
+ 
+ .Entrar {
+    height: 40px;
+    width: 70%;
+    align-items: center;
+    background-color: #1489d1;
+    color: black;
+    font-size:medium;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+ }
+
+
+ .Entrar:hover{
+    transition: 0.5s all;
+    background-color: #FF914D;
+    color: white;
+ }

@@ -1,0 +1,270 @@
+body {
+   background-color: rgb(27, 29, 31);
+   font-family: poppinsregular;
+   margin: 0;
+   padding: 15px;
+   height: 100vh;
+ }
+
+
+header {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   padding-top: 50px;
+   border-bottom: 2px solid white;
+}
+
+header ul {
+   display: flex;
+   width: 600px;
+   justify-content: space-between;
+   
+
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+li {
+   display: flex;
+   margin: auto;
+   width: 50%;
+   justify-content: space-around;
+ 
+}
+
+
+a {
+   color: #DDE6ED;
+   
+}
+
+a:hover {
+   color: #fff;
+   transition: 40ms all;
+   border-bottom: 3px solid #e74908;
+}
+
+
+/* Estilo do botão */
+.dropdown-btn {
+   display: inline-block;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+   border: 2px solid #e74908;
+   padding: 5px;
+   padding-left: 20px;
+   padding-right: 20px;
+   border-radius: 20px;
+   color: #DDE6ED;
+   
+}
+
+/* Estilo do conteúdo do menu (inicialmente oculto) */
+.dropdown-content {
+   display: none;
+   position: absolute;
+   min-width: 100px;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   background-color: rgba(0, 0, 0, 0.5);
+   border-radius: 15px;
+   color: #FFF;
+   left: 75%;
+   transform: translateX(0%);
+   margin-top: 6px;
+
+
+}
+
+/* Estilo dos itens do menu */
+.dropdown-content a {
+   padding: 12px 16px;
+   display: block;
+   text-decoration: none;
+   color: #fff;
+   transition: 0.5s all;
+   border-radius: 15px;
+}
+
+/* Mudar a cor do item do menu ao passar o mouse sobre ele */
+.dropdown-content a:hover {
+   background-color: #1d89ba;
+}
+
+/* Mostrar o menu quando o botão é clicado */
+.dropdown-btn:hover .dropdown-content {
+   display: block;
+}
+
+
+
+
+div {
+   color: #FFF;
+
+}
+
+
+h1 {
+   font-weight: 200;
+
+
+}
+
+
+p {
+   line-height: 20px;
+   max-width: 500px;
+   font-family: poppinslight;
+   color: #fff;
+
+}
+
+/* form {
+   display: flex;
+   flex-direction: column;
+   width: 70%;
+}
+
+form [type="submit"] {
+   height: 50px;
+   width: 30%;
+   background-color: #526D82;
+   color: #DDE6ED;
+   font-size: bold;
+
+}
+
+form [type="submit"]:hover {
+   cursor: pointer;
+   transition: 0.3s all;
+   color: #fff;
+}
+
+
+input {
+   height: 20px;
+   padding: 15px;
+   border-radius: 20px;
+   border: none;
+   font-size: 15px;
+   margin-top: 20px;
+   min-width: 200px;
+   
+}
+
+aside {
+   min-width: 300px;
+   min-height: 500px;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+main {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   height: 75%;
+   margin: 0 20px;
+
+} */
+ion-icon {
+   font-size: 1.5rem;
+   margin-top: 50px;
+}
+
+/* Estilos para telas de 900px ou mais */
+@media screen and (max-width: 900px) {
+   main {
+      flex-direction: column;
+      height: 100%;
+      
+   
+   }
+   header {
+      margin-top: 0;
+   }
+   header ul {
+      flex-direction: column;
+      width: 200px;
+   }
+   
+   h2 {
+      font-size: 1.5rem !important;
+      padding-top: 80px;
+   }
+   aside {
+      text-align: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 50px;
+   }
+   form {
+      display: flex;
+      align-items: center;
+   }
+   input {
+      width: 70%;
+   }
+   .pitch iframe {
+      width: 350px;
+      height: 196px;
+   }
+
+}
+
+/* Estilos para telas de 1024px ou mais */
+ @media screen and (min-width: 1024px) { 
+    header {
+      flex-direction: row;
+      justify-content: space-around;
+   }
+
+   .redesSocias {
+      text-align: center;
+      font-size: 1.5rem;
+   }
+
+   .redesSocias ul {
+      list-style: none;
+      padding: 0%;
+      /* margin-top: 30px; */
+   }
+
+   .redesSocias li {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 20px;
+   }
+
+
+   .redesSocias a {
+      text-decoration: none;
+      color: #DDE6ED;
+      margin-left: 0;
+      text-decoration: none;
+      font-size: 1.5rem;
+   }
+
+   .redesSocias a:hover {
+      text-decoration: none;
+      color: #fff;
+      transition: 0.3s all;
+      cursor: pointer; 
+   }
+
+   .pitch {
+      margin-left: auto;
+   }
+}

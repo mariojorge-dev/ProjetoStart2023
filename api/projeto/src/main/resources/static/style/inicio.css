@@ -1,0 +1,319 @@
+/* * { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: poppinsregular;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+}
+
+.background-image-fixed {
+     
+    background-image: url("/imagens/Blue\ Minimalist\ Linktree\ Background.png");
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    
+}
+
+header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid white;
+    
+}
+
+
+header ul {
+    margin-left: 30%;
+}
+
+.logo {
+    margin-left: 10%;
+    width: 100px;
+}
+
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+
+a:hover {
+    transition: 40ms all;
+    border-bottom: 3px solid rgba(227, 231, 8, 0.897);
+}
+
+
+.dropdown-btn {
+    display: inline-block;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    color: #FF914D;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    font-size: 14px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color: white;
+    right: 110px;
+    transform: translateX(0%);
+    margin-top: 6px;
+
+
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    color: #38B6FF;
+    transition: 0.5s all;
+    border-radius: 15px;
+}
+
+
+.dropdown-content a:hover {
+    color: #FF914D;
+    background-color: #526D82;
+}
+
+
+.dropdown-btn:hover .dropdown-content {
+    display: block;
+} */
+
+
+h1 {
+    font-weight: 200;
+}
+
+h3{
+    font-size: larger;
+    color: #DDE6ED;
+}
+
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 100px;
+    border-radius: 10px;
+    
+}
+
+#imgSlide{
+    width: 1000px;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   width: 70%;
+}
+
+form [type="submit"] {
+   height: 50px;
+   width: 30%;
+   background-color: #526D82;
+   color: #DDE6ED;
+   font-size: bold;
+
+}
+
+form [type="submit"]:hover {
+   cursor: pointer;
+   transition: 0.3s all;
+   color: #fff;
+}
+
+
+input {
+    width: 70%;
+    height: 50px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    margin-top: 20px;
+   
+}
+
+main {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   height: 75%;
+   margin: 0 20px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ }
+ 
+ .user [type="submit"] {
+    height: 50px;
+    width: 30%;
+    background-color: #526D82;
+    color: #DDE6ED;
+    font-size: bold;
+ 
+ }
+ 
+ .user [type="submit"]:hover {
+    cursor: pointer;
+    transition: 0.3s all;
+    color: #fff;
+ }
+ 
+ 
+
+.subtitulo {
+    color: #FFf;
+    padding: 20px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+
+.algo-container {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.box {
+    justify-content: space-between;
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.box img {
+    width: 50%;
+    height: auto;
+    border-radius: 60px;
+    box-shadow: 10px 10px 10px black;
+}
+
+
+.outro-container {
+
+    color: #6959CD;
+    text-align: center;
+}
+
+/* frase do video */
+
+.subtitulo {
+    padding: 10px;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.subtitulo, .video {
+    text-align: center;
+}
+
+/* frase do video */
+
+/* video */
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.video {
+    flex: 1;
+}
+
+.video iframe {
+    width: 728px;
+    height: 450px;
+
+}
+
+.subtitulo-algo {
+    color: #FFF;
+}
+
+
+
+.slide {
+
+    text-align: center;
+    padding: 2%;
+
+}
+
+
+/* Estilos gerais */
+
+/* Estilos para telas menores (ex: smartphones) */
+@media only screen and (max-width: 600px) {
+    /* Adicione estilos específicos para telas menores aqui */
+}
+
+/* Estilos para telas médias (ex: tablets) */
+@media only screen and (min-width: 601px) and (max-width: 2560px )  {
+    /* Adicione estilos específicos para telas médias aqui */
+}
+
+/* Estilos para telas maiores (ex: desktops) */
+@media only screen and (min-width: 1025px) {
+    /* Adicione estilos específicos para telas maiores aqui */
+}

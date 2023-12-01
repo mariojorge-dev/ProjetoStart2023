@@ -28,6 +28,12 @@ public class UsuaioController {
 	
 	@Autowired 		
 	private UsuarioService usuarioService;
+
+	
+    @GetMapping("/cadastrogeral")
+    public String cadastro(){
+        return "cadastro/cadastrogeral";
+    }
 	
 	@GetMapping //mapeia o método ListaUsuarios() para lidar com solicitações HTTP GET na URL base definida em @RequestMapping("/usuarios"). retorna uma lista de todos os usuários no repositório de dados.
 	public List<Usuario> ListaUsuarios() {

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./emp.js" defer></script>
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="icon" href="Img/favicon.ico">
+    <link rel="stylesheet" href="/style/empre.css">
+    <link rel="stylesheet" href="style/headerMenu.css">
+    <title>Cadastro</title>
+</head>
+
+<body class="background-image-fixed">
+
+    <header>
+        <div class="logo">
+            <img src="Img/logopequena.png" alt="">
+        </div>
+        <ul>
+            <a href="index.html">
+                <li>Inicio</li>
+            </a>
+            
+            <a href="cursos.html">
+                <li>Cursos</li>
+            </a>
+            <a href="tela_sobreNos.html">
+                <li>Sobre</li>
+            </a>
+            <a href="form.html">
+                <li>Seja Voluntário</li>
+            </a>
+
+            <div class="dropdown-btn">Cadastre-se
+                <div class="dropdown-content">
+                    <a href="cadastrogeral.html">Usuario</a>
+                    <a href="cadastroempreendedor.html">Empreendedor</a>
+                </div>
+            </div>
+
+        </ul>
+    </header>
+    <div class="container">
+        <div class="form-image">
+            <img src="Img/Add User-rafiki.svg" alt="Imagem ilustrativa de cadastro">
+        </div>
+        <div class="form">
+            <form action="">
+                <h1>Seja uma empresa parceira</h1>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstnameemp">Nome da Empresa</label>
+                        <input class="nome" id="firstnameemp" type="text" name="firstnameemp"
+                            placeholder="Digite o nome da empresa">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cnpjemp">CNPJ</label>
+                        <input class="cnpj" id="cnpjemp" type="text" name="cnpjemp"
+                            placeholder="Digite o CNPJ da Empresa"  maxlength="14" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="nascimentoemp">Tempo de Atividade</label>
+                        <input class="datan" id="nascimentoemp" type="date" name="nascimentoemp" placeholder="">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="emailemp">E-mail</label>
+                        <input class="email" id="emailemp" type="email" name="emailemp"
+                            placeholder="Digite o seu E-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cep">Cep</label>
+                        <input class="cep" id="cep" type="text" name="cepemp" placeholder="Digite o seu cep" maxlength="10" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="estado">Estado</label>
+                        <input class="estado" id="estado" type="text" name="estadoemp"
+                            placeholder="Informe o seu estado" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cidade">Cidade</label>
+                        <input class="cidade" id="cidade" type="text" name="cidadeemp"
+                            placeholder="Informe a sua Cidade" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="municipio">Municipio</label>
+                        <input class="municipio" id="municipio" type="text" name="municipioemp"
+                            placeholder="Informe o seu municipio" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="endereco">Endereço</label>
+                        <input class="endereco" id="endereco" type="text" name="enderecoemp"
+                            placeholder="Digite o seu endereço /Nº" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="numberemp">Celular</label>
+                        <input class="contato" id="numberemp" type="tel" name="numberemp"
+                            placeholder="(xx) xxxx-xxxx" maxlength="11" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="passwordemp">Senha</label>
+                        <input class="senha" id="passwordemp" type="password" name="passwordemp"
+                            placeholder="Digite sua senha" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="passwordemp2">Repita a senha</label>
+                        <input class="senha2" id="passwordemp2" type="password" name="passwordemp2"
+                            placeholder="Digite sua senha" required>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="continue-button">
+                    <button>Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

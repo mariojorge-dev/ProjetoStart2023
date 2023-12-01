@@ -16,9 +16,9 @@ public class LoginController {
 @Autowired
 private IUsuario usu;
 
-    @GetMapping("/login")
+    @GetMapping("/")
     public String index() {
-        return "login/index";
+        return "index";
     }
 
     @PostMapping("/logar")
