@@ -46,6 +46,12 @@ private IUsuario usu;
         return "cadastroempreendedor"; // Retorna o nome do arquivo HTML para a página de cadastro de empreendedor
     }
 
+    @GetMapping("/login.html")
+    public String showLoginPage() {
+        // Aqui você pode adicionar a lógica necessária para exibir a página de login
+        return "login"; // Retorna o nome da página HTML (sem extensão) que o Thymeleaf deve processar
+    }
+
     @PostMapping("/logar")
     public String logar(Model model, @RequestParam String email, @RequestParam String senha) {
         // Verifica as credenciais usando o serviço de usuário
