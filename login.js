@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 });
-const formulario = document.querySelector("user");
+const formulario = document.querySelector(".user");
 const Iemail = document.querySelector(".email");
 const Isenha = document.querySelector(".senha");
 

@@ -4,8 +4,6 @@ import jakarta.validation.constraints.NotNull;
 
 public class CadastroEmpDTO {
     private Integer idempreendedor;
-	
-	
 	@NotNull
 	private String nome;
 	private String cnpj;
