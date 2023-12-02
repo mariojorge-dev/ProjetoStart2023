@@ -6,7 +6,6 @@ import java.util.Optional;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import br.com.usuariosapi.projeto.dtos.CadastroDTO;
 import br.com.usuariosapi.projeto.model.Endereco;
 import br.com.usuariosapi.projeto.model.Usuario;

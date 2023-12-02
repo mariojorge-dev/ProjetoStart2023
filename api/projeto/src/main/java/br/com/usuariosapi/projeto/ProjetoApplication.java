@@ -1,4 +1,3 @@
-// raiz do projeto
 package br.com.usuariosapi.projeto;
 
 // importa as classes do srping framework
