@@ -54,25 +54,26 @@
         </div>
 
         <aside>
-            <form th:action="@{/logar}" th:object="${LoginDTO}" method="post">
-                <h2> Faça seu login</h2>
+            <h2> Faça seu login</h2>
+            <form th:action="@{/logar}" th:object="${LoginDTO}" method="POST">
                 <div class="form-group">
-                    <input type="email" class="form-control form-control-user" id="email" name="email"
-                        placeholder="Digite seu e-mail" th:id="email" th:name="email" />
-        
-                    <input type="password" class="form-control form-control-user" id="senha" name="senha"
-                        placeholder="Digite sua senha" th:id="senha" th:name="senha" />
-        
+                    <input type="email" class="form-control form-control-user"
+                           placeholder="Digite seu e-mail" th:id="email" th:name="email" />
+
+                    <input type="password" class="form-control form-control-user"
+                           placeholder="Digite sua senha" th:id="senha" th:name="senha" />
+
                     <div class="esqueceu">
-                        <a th:href="@{/login.html}">
+                        <a th:href="@{/senha.html}">
                             <li>
                                 Esqueceu a senha?
                             </li>
                         </a>
                     </div>
-                    <button class="Entrar">Entrar</button>
+                    <button type="submit" class="Entrar">Entrar</button>
                 </div>
             </form>
+
         </aside>
     </main>
 

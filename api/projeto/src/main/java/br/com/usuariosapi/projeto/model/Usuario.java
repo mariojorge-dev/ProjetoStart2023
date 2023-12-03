@@ -1,25 +1,18 @@
 package br.com.usuariosapi.projeto.model;
 
-import java.io.Serializable;
-
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.io.Serializable;
 
 @AllArgsConstructor
 @Setter
 @Getter
 @Entity
 @Table(name = "usuarios")
-public class Usuario implements Serializable {
+public class Usuario extends LoginModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -35,7 +28,7 @@ public class Usuario implements Serializable {
 	@Column(name = "nome", length = 200, nullable = true)
 	private String nome;
 
-	@Column(name = "email", length = 200, nullable = true)
+	@Column(name = "email", length = 200, nullable = true, unique = true)
 	private String email;
 
 	@Column(name = "cpf", length = 11, nullable = true)

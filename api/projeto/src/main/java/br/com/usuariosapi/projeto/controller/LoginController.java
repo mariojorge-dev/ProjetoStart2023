@@ -1,16 +1,18 @@
 package br.com.usuariosapi.projeto.controller;
 
+import br.com.usuariosapi.projeto.services.AuthService;
+import br.com.usuariosapi.projeto.services.UsuarioService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import br.com.usuariosapi.projeto.services.AuthService;
-
 
 @Controller
 public class LoginController {
+
+    private UsuarioService usuarioService;
 
     @GetMapping("/index.html")
     public String mostrarPaginaInicio() {
@@ -42,20 +44,37 @@ public class LoginController {
         return "cadastroempreendedor"; // Retorna o nome do arquivo HTML para a página de cadastro de empreendedor
     }
 
-    @GetMapping ("/login.html")
+    @GetMapping ("/senha.html")
     public String mostrarPaginaEsqueceu(){
+        return "senha";
+    }
+/*@GetMapping ("/login.html")
+public  String mostraPaginaLogin () {
+        return "login";
+}
+
+
+    @PostMapping("/logar")
+    public String logar(@RequestBody LoginDTO loginDTO ){
+        loginDTO = this.usuarioService.findByEmailandSenha(loginDTO.getEmail(), loginDTO.getSenha());
         return "login";
     }
+} */
 
- @PostMapping("/logar")
-public String logar(Model model, @RequestParam String email, @RequestParam String senha) {
-    if (AuthService.autenticarUsuario(email, senha)) {
-        return "redirect:/pagina-inicial"; // Redireciona para a página inicial após o login
-    } else {
-        model.addAttribute("error", "Credenciais inválidas");
-        return "login"; // Retorna para a página de login
+    @GetMapping ("/login.html")
+    public String mostrarPaginaLogin(){
+        return "loin";
     }
-}
+
+    @PostMapping("/logar")
+    public String logar(Model model, @RequestParam String email, @RequestParam String senha) {
+        if (AuthService.autenticarUsuario(email, senha)) {
+            return "login"; // Redireciona para a página inicial após o login
+        } else {
+            model.addAttribute("error", "Credenciais inválidas");
+            return "index"; // Retorna para a página de login
+        }
+    }
 }
 
 

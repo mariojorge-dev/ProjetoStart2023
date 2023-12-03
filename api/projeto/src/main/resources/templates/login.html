@@ -4,56 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" th:href="@{css/fonts.css}">
-    <link rel="stylesheet" th:href="@{css/inicio.css}">
-    <link rel="stylesheet" th:href="@{css/senha.css}">
-    <link rel="stylesheet" th:href="@{css/headerMenu.css}">
-    <link rel="icon" href="@{Img/favicon.ico}">
+    <link th:href="@{/css/fonts.css}" rel="stylesheet" />
+    <link th:href="@{/css/inicio.css}" rel="stylesheet" />
+    <link th:href="@{/css/headermenu.css}" rel="stylesheet" />
+    <link rel="icon" th:href="@{/Img/favicon.ico}" />
 
-    <title>Login</title>
+
+    <title>Educa Pro Tech</title>
 </head>
 
 <body class="background-image-fixed">
 
-    <header>
-        <div class="logo">
-            <img th:src="@{/Img/logopequena.png}" alt="">
-    
-        </div>
-        <ul>
-    
-            <li><a th:href="@{/index.html}">Início</a></li>
-            <li><a th:href="@{/cursos.html}">Cursos</a></li>
-            <li><a th:href="@{/tela_sobreNos.html}">Sobre</a></li>
-            <li><a th:href="@{/form.html}">Seja Voluntário</a></li>
-    
-            <div class="dropdown-btn">Cadastre-se
-                <div class="dropdown-content">
-                    <a th:href="@{/cadastrogeral.html}">Usuario</a>
-                    <a th:href="@{/cadastroempreendedor.html}">Empreendedor</a>
-                </div>
+
+<header>
+    <div class="logo">
+        <img th:src="@{/Img/logopequena.png}" alt="">
+
+    </div>
+    <ul>
+
+        <li><a th:href="@{/index.html}">Início</a></li>
+        <li><a th:href="@{/cursos.html}">Cursos</a></li>
+        <li><a th:href="@{/tela_sobreNos.html}">Sobre</a></li>
+        <li><a th:href="@{/form.html}">Seja Voluntário</a></li>
+
+        <div class="dropdown-btn">Meu-Perfil
+            <div class="dropdown-content">
+                <a th:href="@{/perfil.html}">Editar </a>
+                <a th:href="@{/index.html}">Sair</a>
             </div>
-    
-        </ul>
-    
-    </header>
+        </div>
 
-    <main>
-        <aside>
-            <h1> Encontre seu e-mail</h2>
-                <h2> Digite seu e-mail de recuperação </h2>
-                <form>
-                    <input type="mail" placeholder="Digite o seu e-mail">
-                    <div class="esqueceu">
-                        </a>
-                    </div>
-                    <input type="submit" value="Enviar">
+    </ul>
 
-                </form>
-        </aside>
-    </main>
+</header>
+
+<main>
+    <!-- slide -->
+    <div class="slide" id="slide1">
+        <img id="imgSlide" th:src="@{/imagens/imgBemvindo.png}" alt="img1 Bem Vindo">
+    </div>
+    <div class="slide" id="slide2">
+        <img id="imgSlide" th:src="@{/imagens/imgExperimentarCurso.png}" alt="img 2 Experimente nossos Curso">
+    </div>
+
+    <div class="slide" id="slide3">
+        <img id="imgSlide" th:src="@{/imagens/imgSlide003.png}" alt="Imagem 3">
+    </div>
 
 
+</main>
+
+<div class="subtitulo">
+    <h2>Quais benefícios de aprender programação?</h2>
+</div>
+
+<div class="algo-container">
+    <div class="box">
+        <img th:src="@{/imagens/imgQuebracabeça.PNG}" alt="Imagem 1">
+        <h3>Melhora o raciocínio lógico</h3>
+    </div>
+    <div class="box">
+        <img th:src="@{/imagens/imgMelhoraIngles.PNG}" alt="Imagem 2">
+        <h3>Aprendizagem natural do Inglês</h3>
+    </div>
+    <div class="box">
+        <img th:src="@{/imagens/imgCriatividade.PNG}" alt="Imagem 3">
+        <h3>Estimula a Criatividade</h3>
+    </div>
+    <div class="box">
+        <img th:src="@{/imagens/imgEstudoDivertido.PNG}" alt="Imagem 4">
+        <h3>Divertido e Educativo</h3>
+    </div>
+</div>
+
+<div class="outro-container">
+    <div class="subtitulo">
+        <h2>Confira esse vídeo e conheça mais a Educa Pro Tech</h2>
+    </div>
+    <div class="conteudo">
+        <div class="video">
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/NKEkrkQ62u4" title="EducaProTEch"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<script th:src="@{/script/slide.js}"></script>
 
 </body>
 
