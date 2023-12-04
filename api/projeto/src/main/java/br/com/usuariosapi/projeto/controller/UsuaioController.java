@@ -20,11 +20,17 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.usuariosapi.projeto.dtos.CadastroDTO;
 import br.com.usuariosapi.projeto.model.Usuario;
 import br.com.usuariosapi.projeto.services.UsuarioService;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 
 @RestController //UsuaioController como um controlador Spring, lidar com solicitações HTTP e retornar respostas HTTP.
 @CrossOrigin("*") // solicitações de origens cruzadas, o que significa que a API pode ser acessada por clientes de diferentes domínios.
 @RequestMapping("/usuarios") // Define o mapeamento de URL base para todas as solicitações tratadas por este controlador.
 public class UsuaioController {
+	
 	
 	@Autowired 		
 	private UsuarioService usuarioService;
@@ -62,4 +68,5 @@ public class UsuaioController {
     Optional<Usuario> usuario = usuarioService.excluirUsuario(idusuario);
 	return usuario;
 	}
+	
 }

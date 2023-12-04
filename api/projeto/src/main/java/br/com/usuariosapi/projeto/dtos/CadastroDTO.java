@@ -133,5 +133,17 @@ public class CadastroDTO {
 		this.endereco = endereco;
 	}
     
-   
-}
+		private String password;
+	
+		// Getter e Setter para a senha
+		public String getPassword() {
+			return password;
+		}
+	
+		public void setPassword(String password) {
+			this.password = password;
+		}
+	
+		// Outros atributos e métodos do DTO...
+	}
+

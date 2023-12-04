@@ -86,4 +86,7 @@ public class UsuarioService {
 
 		return null;
 	}
+
+    public void salvarUsuario(Usuario novoUsuario) {
+    }
 }
