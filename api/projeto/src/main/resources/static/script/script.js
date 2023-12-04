@@ -65,28 +65,25 @@ formulario.addEventListener('submit', function (event) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Função para formatar a data
+
   function formatarData(datanascimento) {
-    // Verifica se a data está no formato esperado
+
     var regexData = /^\d{2}\/\d{2}\/\d{4}$/;
     if (!regexData.test(datanascimento)) {
       alert('Formato de data inválido');
       return null;
     }
 
-    // Divide a data em dia, mês e ano
     var partes = datanascimento.split('/');
     var dia = partes[0];
     var mes = partes[1];
     var ano = partes[2];
 
-    // Formata a data para o formato desejado (yyyy-mm-dd)
     var dataFormatada = ano + '-' + mes + '-' + dia;
 
     return dataFormatada;
   }
 
-  // Função para buscar informações do CEP
   function buscarCep() {
     var cep = document.querySelector('.cep').value.replace(/\D/g, ''); // Remove caracteres não numéricos
 
@@ -117,7 +114,6 @@ document.addEventListener('DOMContentLoaded', function () {
     xhr.send();
   }
 
-  // Adiciona evento de blur para acionar a função ao sair do campo de CEP
   document.querySelector('.cep').addEventListener('blur', function () {
     buscarCep();
   });
@@ -145,11 +141,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const senha = Isenha.value;
     const senhaRepetida = Isenha1.value;
 
-    // Verifica se as senhas são iguais
+
     return senha === senhaRepetida;
   }
 
-  //
+
 
   function validarCPF(cpf) {
     const cpfLimpo = cpf.replace(/\D/g, '');
@@ -193,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const cpfValido = validarCPF("123.456.789-09");
 
-  //
+
 
   formulario.addEventListener('submit', function (event) {
     event.preventDefault();
