@@ -69,7 +69,7 @@ public class UsuarioService {
 		// endereco.setEstado(cadastroDTO.getEstado());
 		// endereco.setIdempreendedor(cadastroDTO.getIdempreendedor());
 		// emailService.enviarEmailTexto(usuario.getEmail(), "QQ", "QQ");
-		emailService.enviarEmailTexto(usuario.getEmail(), "QQ", "QQ");
+		emailService.enviarEmailTexto(usuario.getEmail(), "EducaProTech", "Seja muito bem-vindo(a) a nossa plataforma, onde a paixão pela tecnologia encontra o aprendizado dinâmico e empolgante! É com grande entusiasmo que damos as boas-vindas a você");
 
 		return usuario;
 	}
