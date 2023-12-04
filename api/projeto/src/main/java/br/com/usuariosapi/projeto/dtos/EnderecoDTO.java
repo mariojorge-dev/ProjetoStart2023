@@ -6,6 +6,8 @@ public class EnderecoDTO {
 	
     private String cep;
 
+	private String bairro;
+
     private String cidade;
 
     private String estado;
@@ -16,11 +18,12 @@ public class EnderecoDTO {
 
     private Integer idusuario;
 
-	public EnderecoDTO(Integer idendereco, String cep, String cidade, String estado, String endereco, Integer idempreendedor,
+	public EnderecoDTO(Integer idendereco, String cep, String bairro, String cidade, String estado, String endereco, Integer idempreendedor,
 			Integer idusuario) {
 		super();
 		this.idendereco = idendereco;
 		this.cep = cep;
+		this.bairro = bairro;
 		this.cidade = cidade;
 		this.estado = estado;
 		this.endereco = endereco;
@@ -30,6 +33,14 @@ public class EnderecoDTO {
 
 	public EnderecoDTO() {
 		super();
+	}
+
+	public String getBairro() {
+		return bairro;
+	}
+
+	public void setBairro(String bairro) {
+		this.bairro = bairro;
 	}
 
 	public Integer getIdendereco() {

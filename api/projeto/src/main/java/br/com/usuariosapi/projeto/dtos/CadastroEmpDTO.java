@@ -14,7 +14,7 @@ public class CadastroEmpDTO {
     private Integer idendereco;
     private String cep;
     private String cidade;
-    private String municipio;
+    private String bairro;
     private String estado;
     private String endereco;
  
@@ -98,12 +98,12 @@ public class CadastroEmpDTO {
 		this.cidade = cidade;
 	}
 
-	public String getMunicipio() {
-		return municipio;
+	public String getBairro() {
+		return bairro;
 	}
 
-	public void setMunicipio(String municipio) {
-		this.municipio = municipio;
+	public void setBairro(String bairro) {
+		this.bairro = bairro;
 	}
 
 	public String getEstado() {

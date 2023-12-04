@@ -8,7 +8,7 @@ const Iemail = document.querySelector(".email");
 const Icep = document.querySelector(".cep");
 const Iestado = document.querySelector(".estado");
 const Icidade = document.querySelector(".cidade");
-const Imunicipio = document.querySelector(".municipio");
+const Ibairro = document.querySelector(".bairro");
 const Iendereco = document.querySelector(".endereco");
 const Icontato = document.querySelector(".contato");
 const Isenha = document.querySelector(".senha");
@@ -29,7 +29,7 @@ fetch("http://localhost:8080/empreendedor", {
         cep: Icep.value,
         estado: Iestado.value,
         cidade: Icidade.value,
-        municipio: Imunicipio.value,
+        bairro: Ibairro.value,
         endereco: Iendereco.value,
         contato: Icontato.value,
         senha: Isenha.value,
@@ -49,7 +49,7 @@ Iemail.value = "";
 Icep.value = "";
 Iestado.value = "";
 Icidade.value = "";
-Imunicipio.value = "";
+Ibairro.value = "";
 Iendereco.value = "";
 Icontato.value = "";
 Isenha.value = "";
@@ -106,7 +106,7 @@ limpar();
           if (!data.erro) {
             document.querySelector('.estado').value = data.uf;
             document.querySelector('.cidade').value = data.localidade;
-            document.querySelector('.municipio').value = data.bairro;
+            document.querySelector('.bairro').value = data.bairro;
           } else {
             alert('CEP não encontrado');
           }

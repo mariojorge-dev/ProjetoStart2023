@@ -36,8 +36,8 @@ public class Endereco implements Serializable{
     @Column(name = "estado", length = 100, nullable = false)
     private String estado;
     
-    @Column(name = "municipio", length = 100, nullable = false)
-    private String municipio;
+    @Column(name = "bairro", length = 100, nullable = false)
+    private String bairro;
 
     @Column(name = "endereco", length = 100, nullable = false)
     private String endereco;
@@ -71,12 +71,12 @@ public class Endereco implements Serializable{
 		this.cep = cep;
 	}
 
-	public String getMunicipio() {
-		return municipio;
+	public String getBairro() {
+		return bairro;
 	}
 
-	public void setMunicipio(String municipio) {
-		this.municipio = municipio;
+	public void setBairro(String bairro) {
+		this.bairro = bairro;
 	}
 
 	public String getCidade() {
