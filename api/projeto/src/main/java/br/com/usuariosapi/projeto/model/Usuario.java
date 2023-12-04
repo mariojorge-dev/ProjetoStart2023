@@ -40,8 +40,9 @@ public class Usuario extends LoginModel implements Serializable {
 	@Column(name = "datanascimento", length = 10, nullable = false)
 	private String datanascimento;
 
-	@Column(name = "sexo", length = 9, nullable = true)
-	private String sexo;
+	@Enumerated(value = EnumType.STRING)
+	@Column(name = "sexo", length = 200, nullable = true)
+	private SexoUser sexo;
 
 	@Column(name = "senha", columnDefinition = "TEXT", nullable = false)
 	private String senha;
@@ -101,11 +102,11 @@ public class Usuario extends LoginModel implements Serializable {
 		this.datanascimento = datan;
 	}
 
-	public String getSexo() {
+	public SexoUser getSexo() {
 		return sexo;
 	}
 
-	public void setSexo(String sexo) {
+	public void setSexo(SexoUser sexo) {
 		this.sexo = sexo;
 	}
 

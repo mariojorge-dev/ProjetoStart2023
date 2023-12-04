@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const formulario = document.querySelector("form");
 const Inome = document.querySelector(".nome");
 const Icpf = document.querySelector(".cpf");
-const Idatan = document.querySelector(".datan");
+const Idatanascimento = document.querySelector(".datanascimento");
 const Iemail = document.querySelector(".email");
 const Icep = document.querySelector(".cep");
 const Iestado = document.querySelector(".estado");
@@ -24,7 +24,7 @@ fetch("http://localhost:8080/usuarios", {
     body: JSON.stringify({
         nome: Inome.value,
         cpf: Icpf.value,
-        datanascimento: Idatan.value,
+        datanascimento: Idatanascimento.value,
         email: Iemail.value,
         cep: Icep.value,
         estado: Iestado.value,
@@ -44,7 +44,7 @@ fetch("http://localhost:8080/usuarios", {
 function limpar () {
 Inome.value = "";
 Icpf.value = "";
-Idatan.value = "";
+Idatanascimento.value = "";
 Iemail.value = "";
 Icep.value = "";
 Iestado.value = "";
@@ -58,7 +58,7 @@ Isexo.value = "";
 
 formulario.addEventListener('submit', function (event) {
 event.preventDefault();
-
+console.log("Valor do sexo:", Isexo.value);
 cadastrar();
 limpar();
 });
@@ -66,16 +66,16 @@ limpar();
 
   document.addEventListener('DOMContentLoaded', function () {
     // Função para formatar a data
-    function formatarData(datan) {
+    function formatarData(datanascimento) {
       // Verifica se a data está no formato esperado
       var regexData = /^\d{2}\/\d{2}\/\d{4}$/;
-      if (!regexData.test(datan)) {
+      if (!regexData.test(datanascimento)) {
         alert('Formato de data inválido');
         return null;
       }
 
       // Divide a data em dia, mês e ano
-      var partes = datan.split('/');
+      var partes = datanascimento.split('/');
       var dia = partes[0];
       var mes = partes[1];
       var ano = partes[2];
@@ -122,15 +122,23 @@ limpar();
       buscarCep();
     });
 
-    // Adiciona evento de blur para formatar a data ao sair do campo de data
-    document.querySelector('.nascimento').addEventListener('blur', function () {
-      var dataFormatada = formatarData(this.value);
-      if (dataFormatada) {
-        this.value = dataFormatada;
-      }
-    });
+      function recuperarSexo() {
+          console.log('Função recuperarSexo está sendo executada.');
 
-    // ... Outros scripts ou funções que você possa ter ...
+          const radios = document.getElementsByName('sexo');
+          console.log('Valores dos botões de rádio:', Array.from(radios).map(radio => radio.value));
+
+          for (const radio of radios) {
+              if (radio.checked) {
+                  console.log('Valor do sexo:', radio.value);
+                  return radio.value;
+              }
+          }
+
+          console.log('Valor do sexo: naoinformou');
+          return "naoinformou";
+      }
+
 
   });
 

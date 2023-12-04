@@ -1,5 +1,6 @@
 package br.com.usuariosapi.projeto.dtos;
 
+import br.com.usuariosapi.projeto.model.SexoUser;
 import jakarta.validation.constraints.NotNull;
 
 public class CadastroDTO {
@@ -12,7 +13,7 @@ public class CadastroDTO {
 	private String contato;
 	private String email;
 	private String datanascimento;
-	private String sexo;
+	private SexoUser sexo;
 	private String senha;
     private Integer idendereco;
     private String cep;
@@ -77,11 +78,11 @@ public class CadastroDTO {
 		this.datanascimento = datanascimento;
 	}
 
-	public String getSexo() {
+	public SexoUser getSexo() {
 		return sexo;
 	}
 
-	public void setSexo(String sexo) {
+	public void setSexo(SexoUser sexo) {
 		this.sexo = sexo;
 	}
 
