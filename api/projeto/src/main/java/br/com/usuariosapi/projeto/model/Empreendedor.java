@@ -33,22 +33,22 @@ public class Empreendedor implements Serializable {
 	@Column(name = "idempreendedor")
 	private Integer idempreendedor;
 
-	@Column(name = "nome", length = 200, nullable = true)
+	@Column(name = "nome", length = 200, nullable = false)
 	private String nome;
 
-	@Column(name = "email", length = 200, nullable = true)
+	@Column(name = "email", length = 200, nullable = false, unique = true)
 	private String email;
 
-	@Column(name = "cnpj", length = 20, nullable = true)
+	@Column(name = "cnpj", length = 20, nullable = false, unique = true)
 	private String cnpj;
 
 	@Column(name = "datan", length = 15, nullable = true)
 	private String datan;
 
-	@Column(name = "contato", length = 15, nullable = true)
+	@Column(name = "contato", length = 15, nullable = false)
 	private String contato;
 
-	@Column(name = "senha", columnDefinition = "TEXT", nullable = true)
+	@Column(name = "senha", columnDefinition = "TEXT", nullable = false)
 	private String senha;
 
 	@OneToOne(mappedBy = "empreendedor", cascade = CascadeType.ALL)

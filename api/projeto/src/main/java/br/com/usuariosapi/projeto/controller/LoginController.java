@@ -2,13 +2,17 @@ package br.com.usuariosapi.projeto.controller;
 
 import br.com.usuariosapi.projeto.services.AuthService;
 import br.com.usuariosapi.projeto.services.UsuarioService;
+import lombok.Getter;
+import lombok.Setter;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-
+@Getter
+@Setter
 @Controller
 public class LoginController {
 

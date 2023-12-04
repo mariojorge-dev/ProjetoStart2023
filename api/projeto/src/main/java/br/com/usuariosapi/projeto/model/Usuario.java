@@ -25,25 +25,25 @@ public class Usuario extends LoginModel implements Serializable {
 	@Column(name = "idusuario")
 	private Integer idusuario;
 
-	@Column(name = "nome", length = 200, nullable = true)
+	@Column(name = "nome", length = 200, nullable = false, unique = true)
 	private String nome;
 
-	@Column(name = "email", length = 200, nullable = true, unique = true)
+	@Column(name = "email", length = 200, nullable = false, unique = true)
 	private String email;
 
-	@Column(name = "cpf", length = 11, nullable = true)
+	@Column(name = "cpf", length = 11, nullable = false, unique = true)
 	private String cpf;
 
-	@Column(name = "contato", length = 15, nullable = true)
+	@Column(name = "contato", length = 15, nullable = false)
 	private String contato;
 
-	@Column(name = "datanascimento", length = 10, nullable = true)
+	@Column(name = "datanascimento", length = 10, nullable = false)
 	private String datanascimento;
 
 	@Column(name = "sexo", length = 9, nullable = true)
 	private String sexo;
 
-	@Column(name = "senha", columnDefinition = "TEXT", nullable = true)
+	@Column(name = "senha", columnDefinition = "TEXT", nullable = false)
 	private String senha;
 
 	@OneToOne(mappedBy = "usuario", cascade = CascadeType.ALL)

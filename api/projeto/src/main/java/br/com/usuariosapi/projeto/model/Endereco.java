@@ -27,19 +27,19 @@ public class Endereco implements Serializable{
     private Integer idendereco;
 	
 	
-    @Column(name = "cep", length = 100, nullable = true)
+    @Column(name = "cep", length = 100, nullable = false)
     private String cep;
 
-    @Column(name = "cidade", length = 100, nullable = true)
+    @Column(name = "cidade", length = 100, nullable = false)
     private String cidade;
 
-    @Column(name = "estado", length = 100, nullable = true)
+    @Column(name = "estado", length = 100, nullable = false)
     private String estado;
     
-    @Column(name = "municipio", length = 100, nullable = true)
+    @Column(name = "municipio", length = 100, nullable = false)
     private String municipio;
 
-    @Column(name = "endereco", length = 100, nullable = true)
+    @Column(name = "endereco", length = 100, nullable = false)
     private String endereco;
     
 	@OneToOne
