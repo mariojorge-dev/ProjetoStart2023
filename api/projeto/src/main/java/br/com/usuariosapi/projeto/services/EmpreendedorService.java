@@ -55,7 +55,8 @@ public class EmpreendedorService {  // Alteração para EmpreendedorService
         BeanUtils.copyProperties(cadastroEmpDTO, empreendedor);
         BeanUtils.copyProperties(cadastroEmpDTO, endereco);
 
-        emailService.enviarEmailTexto(empreendedor.getEmail(), "QQ", "QQ");
+        emailService.enviarEmailTexto(empreendedor.getEmail(), "EducaProTech", "Seja muito bem-vindo(a) a nossa plataforma, onde a paixão pela tecnologia encontra o aprendizado dinâmico e empolgante! É com grande entusiasmo que damos as boas-vindas a sua empresa.");
+
         return empreendedor;
     }
 
