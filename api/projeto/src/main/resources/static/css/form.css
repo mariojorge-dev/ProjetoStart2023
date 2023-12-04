@@ -48,7 +48,9 @@ header ul {
     margin-left: 10%;
 }
 
-
+h1{
+    color: white;
+}
 
 li {
     display: inline-block;
