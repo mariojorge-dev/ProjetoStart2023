@@ -7,7 +7,6 @@ import br.com.usuariosapi.projeto.model.Usuario;
 import br.com.usuariosapi.projeto.repositories.IUsuario;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -20,8 +19,6 @@ public class UsuarioService {
 	IUsuario iUsuario;
 
 	public Usuario salvar(Usuario usuario) {
-		String encript = BCrypt.hashpw(usuario.getSenha(), BCrypt.gensalt());
-		usuario.setSenha(encript);
 		return iUsuario.save(usuario);
 	}
 
@@ -53,7 +50,12 @@ public class UsuarioService {
 		Usuario usuario = new Usuario();
 		Endereco endereco = new Endereco();
 
-		
+		// usuario.setContato(cadastroDTO.getContato());
+		// usuario.setCpf(cadastroDTO.getCpf());
+		// usuario.setDatanascimento(cadastroDTO.getDatanascimento());
+		// usuario.setNome(cadastroDTO.getNome());
+		// usuario.setSenha(cadastroDTO.getSenha());
+		// usuario.setSexo(cadastroDTO.getSexo());
 
 		usuario.setEndereco(endereco);
 		endereco.setUsuario(usuario);
@@ -61,8 +63,14 @@ public class UsuarioService {
 		BeanUtils.copyProperties(cadastroDTO, usuario);
 		BeanUtils.copyProperties(cadastroDTO, endereco);
 
-		
+		// endereco.setCep(cadastroDTO.getCep());
+		// endereco.setCidade(cadastroDTO.getCidade());
+		// endereco.setEndereco(cadastroDTO.getEndereco());
+		// endereco.setEstado(cadastroDTO.getEstado());
+		// endereco.setIdempreendedor(cadastroDTO.getIdempreendedor());
+		// emailService.enviarEmailTexto(usuario.getEmail(), "QQ", "QQ");
 		emailService.enviarEmailTexto(usuario.getEmail(), "EducaProTech", "Seja muito bem-vindo(a) a nossa plataforma, onde a paixão pela tecnologia encontra o aprendizado dinâmico e empolgante! É com grande entusiasmo que damos as boas-vindas a você");
+
 
 		return usuario;
 	}

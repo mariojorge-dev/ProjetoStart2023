@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 
 import br.com.usuariosapi.projeto.dtos.CadastroEmpDTO;
 import br.com.usuariosapi.projeto.model.Endereco;
-import br.com.usuariosapi.projeto.model.Empreendedor;  // Alteração para Empreendedor
-import br.com.usuariosapi.projeto.repositories.IEmpreendedor;  // Alteração para IEmpreendedor
+import br.com.usuariosapi.projeto.model.Empreendedor; 
+import br.com.usuariosapi.projeto.repositories.IEmpreendedor;
 
 @Service
 public class EmpreendedorService {  // Alteração para EmpreendedorService
@@ -37,11 +37,7 @@ public class EmpreendedorService {  // Alteração para EmpreendedorService
         return empreendedor;
     }
 
-    /**
-     * Metodo usado para Converter um CadastroDTO para Empreendedor.
-     *
-     * @param cadastroDTO Dto com os dados endereço e empreendedor.
-     */
+
     @Autowired
     private EmailService emailService;
 
