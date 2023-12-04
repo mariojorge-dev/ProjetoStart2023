@@ -122,23 +122,21 @@ limpar();
       buscarCep();
     });
 
-      function recuperarSexo() {
-          console.log('Função recuperarSexo está sendo executada.');
 
-          const radios = document.getElementsByName('sexo');
-          console.log('Valores dos botões de rádio:', Array.from(radios).map(radio => radio.value));
 
-          for (const radio of radios) {
-              if (radio.checked) {
-                  console.log('Valor do sexo:', radio.value);
-                  return radio.value;
-              }
-          }
+    function recuperarSexo() {
+        console.log('Função recuperarSexo está sendo executada.');
 
-          console.log('Valor do sexo: naoinformou');
-          return "naoinformou";
-      }
+        const selectedValue = selectElement.value;
+
+        if (selectedValue) {
+            console.log('Valor do sexo:', selectedValue);
+            return selectedValue;
+        } else {
+            console.log('Valor do sexo: naoinformou');
+            return "naoinformou";
+        }
+    }
 
 
   });
-

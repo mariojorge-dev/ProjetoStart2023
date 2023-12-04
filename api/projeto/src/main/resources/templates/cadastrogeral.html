@@ -129,20 +129,11 @@
                 <div class="gender-inputs">
                     <p>Gênero</p>
                     <div class="gender-group">
-                        <div class="gender-input">
-                            <input id="female" type="radio" name="sexo" class="sexo" value="F">
-                            <label for="female">Feminino</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="male" type="radio" name="sexo" class="sexo" value="M">
-                            <label for="male">Masculino</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="others" type="radio" name="sexo" class="sexo" value="O">
-                            <label for="others">Outros</label>
-                        </div>
+                        <select id="genderSelect" name="sexo" class="sexo">
+                            <option value="M">Masculino</option>
+                            <option value="F">Feminino</option>
+                            <option value="O">Outros</option>
+                        </select>
                     </div>
                 </div>
                 <hr>
